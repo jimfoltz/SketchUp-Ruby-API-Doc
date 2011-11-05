@@ -1,8 +1,34 @@
+#
+# The Sketchup module namespace contains methods that might be considered "application" level methods. 
+# The "entry-point" to most plugins.
+#
+
 module Sketchup
+
+    # @example
+    #   model = Sketchup.active_model
+    #   ==> #<Sketchup::Model:0x7a8d200>
+    #   entities = model.entities
+    #   layers = model.layers
+    #
+    # @return [Model] the current active model. 
+    #   On Windows, there is only a single active model. Since the Mac version of SketchUp 
+    #   can have multiple models open, this returns the active model.
     def self.active_model
     end
-    def self.add_observer
+
+    # Attaches an {AppObserver} to the current SketchUp Application. You should retain a
+    # reference to the observer if you evert want to {remove_observer remove} it at a later time.
+    #
+    # @example
+    #   app_observer = AppObserver.new
+    #   status = Sketchup.add_observer(app_observer)
+    #
+    # @param [AppObserver] an instance of an AppObserver
+    # @return status true if successful, false if not.
+    def self.add_observer(app_observer)
     end
+
     def self.app_name
     end
     def self.break_edges=
@@ -57,17 +83,41 @@ module Sketchup
     end
     def self.register_importer
     end
-    def self.remove_observer
+
+    # Removes an attached {AppObserver}
+    #
+    # @example
+    #   status = Sketchup.remove_observer(app_observer)
+    #
+    # @param [AppObserver] app_observer a reference to a AppObserver instance.
+    #
+    # @return [Boolean] status true if successful, false if not.
+    def self.remove_observer(app_observer)
     end
+
     def self.require
     end
+
     def self.save_thumbnail
     end
+
     def self.send_action
     end
-    def self.set_status_text
+
+    # Display a message in SketchUp's Status Bar or VCB value or label.
+    # @param [String] text the text to display in the staus bar.
+    # @param position (optional) one of:
+    #   SB_PROMPT
+    #   SB_VCB_LABEL
+    #   SB_VCB_VALUE
+    # @return [Boolean] true if successful, false if not.
+    def self.set_status_text(text, position)
     end
-    def self.status_text=
+
+    # @see set_status_text
+    # @param [String] text the text to display in the staus bar.
+    # @return [Boolean] true if successful, false if not.
+    def self.status_text=(text)
     end
     def self.template
     end
@@ -77,14 +127,31 @@ module Sketchup
     end
     def self.undo
     end
-    def self.vcb_label=
+
+    # Sets the label for the VCB, more recently known as the Measurements box.
+    # @param [String] label the text label for the VCB
+    def self.vcb_label=(label)
     end
-    def self.vcb_value=
+
+    # Sets the value of the VCB, aka the Measurements box.
+    # @param [String] str the text to place in the VCB.
+    def self.vcb_value=(str)
     end
+
     def self.version
     end
     def self.version_number
     end
-    def self.write_default
+    
+    # Write a key-value pair to the specified section of the Registry. Persistent storage.
+    # Sections appear under HKCU\\Software\\Google\\SketchUp(v) where v is the SketchUp major version.
+    # @example
+    #   status = Sketchup.write_default("MyPluginConfig", "OffsetAmount", 3.5)
+    #
+    # @param [String] section The Registry key
+    # @param [String] key
+    # @param [String, Array, Numeric] value the value to store
+    # @return [Boolean] true if success, false if not.
+    def self.write_default(section, key, value)
     end
 end

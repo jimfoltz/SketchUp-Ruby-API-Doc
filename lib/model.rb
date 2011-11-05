@@ -1,3 +1,4 @@
+module Sketchup
 class Model
     def abort_operation
     end
@@ -21,8 +22,11 @@ class Model
     end
     def behavior
     end
+
+    # @return [BoundingBox]
     def bounds
     end
+
     def close_active
     end
     def commit_operation
@@ -35,8 +39,11 @@ class Model
     end
     def edit_transform
     end
+
+    # @return [Entities]
     def entities
     end
+
     def export
     end
     def get_attribute
@@ -51,12 +58,18 @@ class Model
     end
     def latlong_to_point
     end
+
+    # @return [Layers]
     def layers
     end
+
     def list_datums
     end
+
+    # @return [Materials]
     def materials
     end
+
     def mipmapping=
     end
     def mipmapping?
@@ -115,4 +128,5 @@ class Model
     end
     def valid?
     end
+end
 end
