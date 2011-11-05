@@ -1,4 +1,4 @@
-class Behavior
+class Behavior < Entity
     def always_face_camera=
     end
     def always_face_camera?
