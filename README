@@ -1,0 +1,7 @@
+View the RubyDoc.info here: http://rubydoc.info/github/jimfoltz/SketchUp-Ruby-API-Doc/master/frames
+
+Nov 5, 2011
+
+ * added post-recieve hook - RubyDoc.info docs should automatically update after a git push command.
+
+
