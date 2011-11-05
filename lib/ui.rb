@@ -1,8 +1,12 @@
 module UI
     def self.add_context_menu_handler
     end
+
+    # @example
+    #   UI.beep
     def self.beep
     end
+
     def self.create_cursor
     end
     def self.inputbox
