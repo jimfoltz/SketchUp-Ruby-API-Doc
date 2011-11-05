@@ -1,4 +1,4 @@
-class Face
+class Face < Drawingelement
     def all_connected
     end
     def area
