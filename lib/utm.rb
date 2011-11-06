@@ -1,5 +1,4 @@
 module Geom
-    # @deprecated undocumented class
     class UTM
         def to_a
         end
