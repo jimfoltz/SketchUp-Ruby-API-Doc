@@ -1,3 +1,4 @@
+module  Geom
 class BoundingBox
     def add
     end
@@ -30,3 +31,4 @@ class BoundingBox
     def width
     end
 end
+end #module Geom
