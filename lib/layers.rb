@@ -1,6 +1,6 @@
 module Sketchup
 class Layers
-    include Enumberable
+    include Enumerable
     def []
     end
     def add

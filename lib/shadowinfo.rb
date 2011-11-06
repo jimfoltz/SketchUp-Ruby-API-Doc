@@ -1,6 +1,6 @@
 module Sketchup
 class ShadowInfo
-    include Enumberable
+    include Enumerable
     def []
     end
     def []=

@@ -1,6 +1,6 @@
 module Sketchup
 class Styles
-    include Enumberable
+    include Enumerable
     def []
     end
     def active_style

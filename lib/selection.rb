@@ -1,6 +1,6 @@
 module Sketchup
     class Selection
-        include Enumberable
+        include Enumerable
         def []
         end
         def add
