@@ -1,5 +1,5 @@
 module Sketchup
-class ShadowInfo
+class ShadowInfo < Entity
     include Enumerable
     def []
     end

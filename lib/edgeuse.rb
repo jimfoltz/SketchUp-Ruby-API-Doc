@@ -1,5 +1,5 @@
 module Sketchup
-class EdgeUse
+class EdgeUse < Entity
     def edge
     end
     def end_vertex_normal

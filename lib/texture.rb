@@ -1,5 +1,5 @@
 module Sketchup
-    class Texture
+    class Texture < Entity
         def average_color
         end
         def filename

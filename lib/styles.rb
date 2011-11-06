@@ -1,5 +1,5 @@
 module Sketchup
-class Styles
+class Styles < Entity
     include Enumerable
     def []
     end

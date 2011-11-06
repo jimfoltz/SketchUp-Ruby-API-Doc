@@ -1,5 +1,5 @@
 module Sketchup
-class Materials
+class Materials < Entity
     include Enumerable
     def []
     end

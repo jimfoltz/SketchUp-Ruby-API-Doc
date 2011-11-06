@@ -1,5 +1,5 @@
 module Sketchup
-class Layer
+class Layer < Entity
     include Comparable
     def <=>
     end

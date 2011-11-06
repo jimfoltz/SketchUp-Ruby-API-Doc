@@ -1,5 +1,5 @@
 module Sketchup
-class Style
+class Style < Entity
     def description
     end
     def description=

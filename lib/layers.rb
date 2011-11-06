@@ -1,5 +1,5 @@
 module Sketchup
-class Layers
+class Layers < Entity
     include Enumerable
     def []
     end

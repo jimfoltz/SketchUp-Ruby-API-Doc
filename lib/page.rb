@@ -1,5 +1,5 @@
 module Sketchup
-class Page
+class Page < Entity
     def camera
     end
     def delay_time

@@ -1,5 +1,5 @@
 module Sketchup
-class DefinitionList
+class DefinitionList < Entity
     include Enumerable
     def []
     end

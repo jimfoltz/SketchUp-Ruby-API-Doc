@@ -1,5 +1,5 @@
 module Sketchup
-class Material
+class Material < Entity
     include Comparable
     def <=>
     end

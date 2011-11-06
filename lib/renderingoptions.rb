@@ -1,5 +1,5 @@
 module Sketchup
-class RenderingOptions
+class RenderingOptions < Entity
     include Enumerable
     def []
     end

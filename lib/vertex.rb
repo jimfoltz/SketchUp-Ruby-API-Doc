@@ -1,5 +1,5 @@
 module Sketchup
-class Vertex
+class Vertex < Entity
     def common_edge
     end
     def curve_interior?

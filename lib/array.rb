@@ -1,3 +1,4 @@
+# In addition to the built-in {http://www.ruby-doc.org/core-1.8.6/Array.html Ruby Array} methods, the following methods have been added by SketchUp.
 class Array
     def cross
     end

@@ -1,5 +1,5 @@
 module Sketchup
-class Loop
+class Loop < Entity
     def convex?
     end
     def edges

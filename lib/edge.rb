@@ -1,12 +1,21 @@
 module Sketchup
-class Edge < Drawingelement
-    def all_connected
-    end
-    def common_face
-    end
-    def curve
-    end
-    def end
+    class Edge < Drawingelement
+
+        # @example
+        #   model = Sketchup.active_model
+        #   edge = model.selection[0]
+        #   ents = edge.all_connected
+        #   ==> [<Sketchup::Edge:0x787a440>, #<Sketchup::Edge:0x787a42c>, #<Sketchup::Face:0x787a418>, #<Sketchup::Edge:0x787a468>, #<Sketchup::Edge:0x787a404>]
+        #
+        # @return [Array] an array of the edge and its connected entities.
+        def all_connected
+        end
+
+        def common_face
+        end
+        def curve
+        end
+        def end
     end
     def explode_curve
     end

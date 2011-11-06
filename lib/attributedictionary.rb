@@ -1,5 +1,5 @@
 module Sketchup
-class AttributeDictionary
+class AttributeDictionary < Entity
     include Enumerable
     def []
     end

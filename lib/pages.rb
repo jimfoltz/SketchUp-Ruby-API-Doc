@@ -1,5 +1,5 @@
 module Sketchup
-class Pages
+class Pages < Entity
     include Enumerable
     def []
     end
