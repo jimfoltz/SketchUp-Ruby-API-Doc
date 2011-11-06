@@ -1,3 +1,6 @@
+# This appears to be a modified version of {http://www.ruby-doc.org/core-1.8.6/Enumerable.html Ruby's Enumerable module}.
+#   Notably missing is the include? method, but member? can be used instead.
+
 module Enumerable
     def all?
     end
