@@ -1,3 +1,4 @@
+module UI
 class WebDialog
     def add_action_callback
     end
@@ -59,4 +60,5 @@ class WebDialog
     end
     def visible?
     end
+end
 end

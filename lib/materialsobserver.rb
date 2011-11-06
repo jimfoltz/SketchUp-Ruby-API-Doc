@@ -1,3 +1,4 @@
+module Sketchup
 class MaterialsObserver
     def onMaterialAdd
     end
@@ -13,4 +14,5 @@ class MaterialsObserver
     end
     def onMaterialUndoRedo
     end
+end
 end

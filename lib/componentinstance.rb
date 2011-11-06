@@ -1,3 +1,4 @@
+module Sketchup
 class ComponentInstance
     def add_observer
     end
@@ -31,4 +32,5 @@ class ComponentInstance
     end
     def transformation=
     end
+end
 end

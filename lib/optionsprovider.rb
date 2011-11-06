@@ -1,3 +1,4 @@
+module Sketchup
 class OptionsProvider
     def []
     end
@@ -27,4 +28,5 @@ class OptionsProvider
     end
     def size
     end
+end
 end

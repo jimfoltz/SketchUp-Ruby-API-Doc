@@ -1,3 +1,4 @@
+module UI
 class Toolbar
     def add_item
     end
@@ -15,4 +16,5 @@ class Toolbar
     end
     def visible?
     end
+end
 end

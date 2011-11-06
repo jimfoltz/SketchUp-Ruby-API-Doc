@@ -1,3 +1,4 @@
+module Sketchup
 class Image
     def explode
     end
@@ -27,4 +28,5 @@ class Image
     end
     def zrotation
     end
+end
 end

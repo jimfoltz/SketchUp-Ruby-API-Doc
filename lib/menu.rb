@@ -1,3 +1,4 @@
+module Sketchup
 class Menu
     def add_item
     end
@@ -7,4 +8,5 @@ class Menu
     end
     def set_validation_proc
     end
+end
 end

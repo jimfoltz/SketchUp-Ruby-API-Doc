@@ -1,3 +1,4 @@
+module Sketchup
 class Material
     def <=>
     end
@@ -23,4 +24,5 @@ class Material
     end
     def use_alpha?
     end
+end
 end

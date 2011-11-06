@@ -1,3 +1,4 @@
+module Sketchup
 class Camera
     def aspect_ratio
     end
@@ -45,4 +46,5 @@ class Camera
     end
     def zaxis
     end
+end
 end

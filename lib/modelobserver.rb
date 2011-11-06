@@ -1,3 +1,4 @@
+module Sketchup
 class ModelObserver
     def onActivePathChanged
     end
@@ -27,4 +28,5 @@ class ModelObserver
     end
     def onTransactionUndo
     end
+end
 end

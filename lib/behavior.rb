@@ -1,3 +1,4 @@
+module Sketchup
 class Behavior < Entity
     def always_face_camera=
     end
@@ -23,4 +24,5 @@ class Behavior < Entity
     end
     def snapto=
     end
+end
 end

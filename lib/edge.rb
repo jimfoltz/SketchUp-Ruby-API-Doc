@@ -1,3 +1,4 @@
+module Sketchup
 class Edge
     def all_connected
     end
@@ -37,4 +38,5 @@ class Edge
     end
     def vertices
     end
+end
 end

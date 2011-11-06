@@ -1,3 +1,4 @@
+module Sketchup
 class DefinitionList
     def []
     end
@@ -23,4 +24,5 @@ class DefinitionList
     end
     def unique_name
     end
+end
 end

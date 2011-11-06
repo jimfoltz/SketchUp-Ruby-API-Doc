@@ -1,3 +1,4 @@
+module Sketchup
 class Layers
     def []
     end
@@ -19,4 +20,5 @@ class Layers
     end
     def unique_name
     end
+end
 end

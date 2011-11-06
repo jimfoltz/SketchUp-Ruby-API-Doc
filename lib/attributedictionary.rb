@@ -1,3 +1,4 @@
+module Sketchup
 class AttributeDictionary
     def []
     end
@@ -21,4 +22,5 @@ class AttributeDictionary
     end
     def values
     end
+end
 end

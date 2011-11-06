@@ -1,3 +1,4 @@
+module Sketchup
 class Importer
     def description
     end
@@ -11,4 +12,5 @@ class Importer
     end
     def supports_options?
     end
+end
 end

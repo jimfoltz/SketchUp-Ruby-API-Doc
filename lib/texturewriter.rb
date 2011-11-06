@@ -1,3 +1,4 @@
+module Sketchup
 class TextureWriter
     def count
     end
@@ -13,4 +14,5 @@ class TextureWriter
     end
     def write_all
     end
+end
 end

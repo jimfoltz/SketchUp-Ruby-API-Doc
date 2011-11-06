@@ -1,3 +1,4 @@
+module Sketchup
 class EntitiesObserver
     def onContentsModified
     end
@@ -7,4 +8,5 @@ class EntitiesObserver
     end
     def onEraseEntities
     end
+end
 end

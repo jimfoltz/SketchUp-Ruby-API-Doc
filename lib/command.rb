@@ -1,3 +1,4 @@
+module UI
 class Command
     def large_icon=
     end
@@ -13,4 +14,5 @@ class Command
     end
     def tooltip=
     end
+end
 end

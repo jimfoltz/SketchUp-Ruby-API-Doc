@@ -1,3 +1,4 @@
+module Sketchup
 class Tools
     def active_tool_id
     end
@@ -13,4 +14,5 @@ class Tools
     end
     def remove_observer
     end
+end
 end

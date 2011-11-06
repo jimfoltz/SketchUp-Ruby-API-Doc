@@ -1,3 +1,4 @@
+module Sketchup
 class Styles
     def []
     end
@@ -23,4 +24,5 @@ class Styles
     end
     def update_selected_style
     end
+end
 end

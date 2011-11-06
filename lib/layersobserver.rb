@@ -1,3 +1,4 @@
+module Sketchup
 class LayersObserver
     def onCurrentLayerChanged
     end
@@ -7,4 +8,5 @@ class LayersObserver
     end
     def onRemoveAllLayers
     end
+end
 end

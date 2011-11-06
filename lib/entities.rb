@@ -1,4 +1,5 @@
-    class Sketchup::Entities
+module Sketchup
+    class Entities
         def initialize(model)
             @model = model
         end
@@ -99,3 +100,4 @@
         def transform_entities
         end
     end
+end

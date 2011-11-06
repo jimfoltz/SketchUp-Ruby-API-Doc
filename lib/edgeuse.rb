@@ -1,3 +1,4 @@
+module Sketchup
 class EdgeUse
     def edge
     end
@@ -17,4 +18,5 @@ class EdgeUse
     end
     def start_vertex_normal
     end
+end
 end

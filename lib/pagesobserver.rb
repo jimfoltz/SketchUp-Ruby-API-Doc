@@ -1,3 +1,4 @@
+module Sketchup
 class PagesObserver
     def onContentsModified
     end
@@ -5,4 +6,5 @@ class PagesObserver
     end
     def onElementRemoved
     end
+end
 end

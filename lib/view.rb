@@ -1,3 +1,4 @@
+module Sketchup
 class View
     def add_observer
     end
@@ -79,4 +80,5 @@ class View
     end
     def zoom_extents
     end
+end
 end

@@ -1,3 +1,4 @@
+module Sketchup
 class ConstructionLine
     def direction
     end
@@ -21,4 +22,5 @@ class ConstructionLine
     end
     def stipple=
     end
+end
 end

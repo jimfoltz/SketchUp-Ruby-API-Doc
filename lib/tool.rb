@@ -1,3 +1,4 @@
+# @abstract
 class Tool
     def activate
     end

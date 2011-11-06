@@ -1,3 +1,4 @@
+module Sketchup
 class Curve < Entity
     def count_edges
     end
@@ -15,4 +16,5 @@ class Curve < Entity
     end
     def vertices
     end
+end
 end

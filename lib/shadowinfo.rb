@@ -1,3 +1,4 @@
+module Sketchup
 class ShadowInfo
     def []
     end
@@ -15,4 +16,5 @@ class ShadowInfo
     end
     def remove_observer
     end
+end
 end

@@ -1,3 +1,4 @@
+module Sketchup
 class Loop
     def convex?
     end
@@ -11,4 +12,5 @@ class Loop
     end
     def vertices
     end
+end
 end

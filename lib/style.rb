@@ -1,3 +1,4 @@
+module Sketchup
 class Style
     def description
     end
@@ -7,4 +8,5 @@ class Style
     end
     def name=
     end
+end
 end

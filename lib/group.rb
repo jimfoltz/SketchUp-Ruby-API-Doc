@@ -1,3 +1,4 @@
+module Sketchup
 class Group
     def add_observer
     end
@@ -35,4 +36,5 @@ class Group
     end
     def transformation=
     end
+end
 end

@@ -1,3 +1,4 @@
+module Sketchup
 class Drawingelement < Entity
     def bounds
     end
@@ -27,4 +28,5 @@ class Drawingelement < Entity
     end
     def visible?
     end
+end
 end

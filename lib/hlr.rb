@@ -1,3 +1,5 @@
+# @deprecated Undocumented Class
+module Sketchup
 class HLR
     def calculate
     end
@@ -5,4 +7,5 @@ class HLR
     end
     def num_faces
     end
+end
 end

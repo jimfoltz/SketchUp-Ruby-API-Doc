@@ -1,3 +1,4 @@
+module Sketchup
 class PickHelper
     def all_picked
     end
@@ -31,4 +32,5 @@ class PickHelper
     end
     def view
     end
+end
 end

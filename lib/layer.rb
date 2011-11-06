@@ -1,3 +1,4 @@
+module Sketchup
 class Layer
     def <=>
     end
@@ -15,4 +16,5 @@ class Layer
     end
     def visible?
     end
+end
 end

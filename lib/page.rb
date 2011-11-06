@@ -1,3 +1,4 @@
+module Sketchup
 class Page
     def camera
     end
@@ -65,4 +66,5 @@ class Page
     end
     def use_style?
     end
+end
 end

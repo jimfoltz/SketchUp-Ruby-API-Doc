@@ -1,3 +1,4 @@
+module Sketchup
 class Entity
     def add_observer
     end
@@ -27,4 +28,5 @@ class Entity
     end
     def valid?
     end
+end
 end

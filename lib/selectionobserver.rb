@@ -1,3 +1,4 @@
+module Sketchup
 class SelectionObserver
     def onSelectionAdded
     end
@@ -7,4 +8,5 @@ class SelectionObserver
     end
     def onSelectionRemoved
     end
+end
 end

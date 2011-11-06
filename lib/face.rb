@@ -1,3 +1,4 @@
+module Sketchup
 class Face < Drawingelement
     def all_connected
     end
@@ -39,4 +40,5 @@ class Face < Drawingelement
     end
     def vertices
     end
+end
 end

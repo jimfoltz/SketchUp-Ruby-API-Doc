@@ -1,3 +1,4 @@
+module Sketchup
 class InputPoint
     def ==
     end
@@ -31,4 +32,5 @@ class InputPoint
     end
     def vertex
     end
+end
 end

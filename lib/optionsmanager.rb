@@ -1,3 +1,4 @@
+module Sketchup
 class OptionsManager
     def []
     end
@@ -9,4 +10,5 @@ class OptionsManager
     end
     def size
     end
+end
 end

@@ -1,3 +1,4 @@
+module Sketchup
 class DefinitionsObserver
     def onComponentAdded
     end
@@ -7,4 +8,5 @@ class DefinitionsObserver
     end
     def onComponentTypeChanged
     end
+end
 end

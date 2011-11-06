@@ -1,3 +1,4 @@
+module Sketchup
 class Text
     def arrow_type
     end
@@ -31,4 +32,5 @@ class Text
     end
     def vector=
     end
+end
 end

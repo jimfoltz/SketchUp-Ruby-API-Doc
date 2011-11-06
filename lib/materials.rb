@@ -1,3 +1,4 @@
+module Sketchup
 class Materials
     def []
     end
@@ -21,4 +22,5 @@ class Materials
     end
     def remove_observer
     end
+end
 end

@@ -1,3 +1,4 @@
+module Sketchup
 class Vertex
     def common_edge
     end
@@ -13,4 +14,5 @@ class Vertex
     end
     def used_by?
     end
+end
 end

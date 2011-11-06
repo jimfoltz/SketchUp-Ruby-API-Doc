@@ -1,3 +1,4 @@
+module Sketchup
 class Pages
     def []
     end
@@ -31,4 +32,5 @@ class Pages
     end
     def slideshow_time
     end
+end
 end

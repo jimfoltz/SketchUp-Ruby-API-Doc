@@ -1,3 +1,4 @@
+module Sketchup
 class Color
     def alpha
     end
@@ -27,4 +28,5 @@ class Color
     end
     def to_s
     end
+end
 end

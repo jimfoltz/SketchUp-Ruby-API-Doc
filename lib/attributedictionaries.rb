@@ -1,3 +1,4 @@
+module Sketchup
 class AttributeDictionaries < Entity
     def []
     end
@@ -5,4 +6,5 @@ class AttributeDictionaries < Entity
     end
     def each
     end
+end
 end

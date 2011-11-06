@@ -1,4 +1,5 @@
-class ComponentDefinition
+module Sketchup
+class ComponentDefinition < Drawingelement
     def <=>
     end
     def ==
@@ -47,4 +48,5 @@ class ComponentDefinition
     end
     def save_thumbnail
     end
+end
 end

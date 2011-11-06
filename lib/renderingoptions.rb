@@ -1,3 +1,4 @@
+module Sketchup
 class RenderingOptions
     def []
     end
@@ -15,4 +16,5 @@ class RenderingOptions
     end
     def remove_observer
     end
+end
 end
