@@ -1,3 +1,4 @@
+module Geom
 class Vector3d
     def %
     end
@@ -76,3 +77,4 @@ class Vector3d
     def z=
     end
 end
+end # module Geom
