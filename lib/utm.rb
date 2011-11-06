@@ -1,3 +1,4 @@
+module Geom
 class UTM
     def to_a
     end
@@ -14,3 +15,4 @@ class UTM
     def zone_numer
     end
 end
+end # module Geom
