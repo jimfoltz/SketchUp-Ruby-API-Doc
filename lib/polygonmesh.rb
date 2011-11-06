@@ -1,3 +1,4 @@
+module Geom
 class PolygonMesh
     def add_point
     end
@@ -32,3 +33,4 @@ class PolygonMesh
     def uvs
     end
 end
+end # module Geom
