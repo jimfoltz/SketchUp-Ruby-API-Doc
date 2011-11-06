@@ -1,3 +1,4 @@
+module Sketchup
 class AppObserver
     def onNewModel
     end
@@ -8,3 +9,4 @@ class AppObserver
     def onUnloadExtension
     end
 end
+end # module Sketchup
