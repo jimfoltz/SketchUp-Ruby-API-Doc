@@ -1,3 +1,4 @@
+# @abstract
 class LoadHandler
     def cancelled?
     end
