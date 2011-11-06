@@ -1,9 +1,12 @@
 module Sketchup
     class Entities
         include Enumerable
-        def initialize(model)
-            @model = model
+
+	# @private
+        def initialize
+            #@model = Sketchup::Model.new
         end
+
         def [](o)
         end
         def add_3d_text

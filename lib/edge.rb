@@ -1,6 +1,10 @@
 module Sketchup
     class Edge < Drawingelement
 
+	# @private
+	def initialize(pt1, pt2)
+	end
+
         # @example
         #   model = Sketchup.active_model
         #   edge = model.selection[0]

@@ -16,6 +16,9 @@ module Sketchup
     #   Since the Mac version of SketchUp 
     #   can have multiple models open, this returns the currently focused model.
     def self.active_model
+        if @model.class != Sketchup::Model
+            @model = Sketchup::Model.new
+        end
     end
 
     # Attaches an AppObserver to the current SketchUp Application. You should retain a

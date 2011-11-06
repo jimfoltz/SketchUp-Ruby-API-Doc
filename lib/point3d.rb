@@ -1,5 +1,12 @@
 module Geom
     class Point3d
+	# @private
+	def initialize(pt = nil)
+	    @x = pt[0]
+	    @y = pt[1]
+	    @z = pt[2]
+	end
+	
         def +
         end
         def -

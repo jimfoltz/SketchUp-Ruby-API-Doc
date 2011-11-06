@@ -1,3 +1,5 @@
 doc
 .yardoc
 *.dot
+mockup.rb
+mockup_test.rb
