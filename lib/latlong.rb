@@ -1,3 +1,4 @@
+module Geom
 class LatLong
     def latitude
     end
@@ -12,3 +13,4 @@ class LatLong
     def to_utm
     end
 end
+end # module Geom
