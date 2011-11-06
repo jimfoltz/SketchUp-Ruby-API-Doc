@@ -2,15 +2,21 @@ module Sketchup
     class Model
         # @private
         def initialize
-            # These collections depend on the template...
-            @layers      = Sketchup::Layers.new
-            @materials   = Sketchup::Materials.new
-            @definitions = Sketchup::DefinitionList.new
-            @options     = Sketchup::OptionsManager.new
-            @pages       = Sketchup::Pages.new
-            @styles      = Sketchup::Styles.new
+            # These collections may also depend on the template...
             @entities    = Sketchup::Entities.new
+            #@layers      = Sketchup::Layers.new
+            #@materials   = Sketchup::Materials.new
+            #@definitions = Sketchup::DefinitionList.new
+            #@options     = Sketchup::OptionsManager.new
+            #@pages       = Sketchup::Pages.new
+            #@styles      = Sketchup::Styles.new
+            #@selection   = Sketchup::Selection.new
         end
+        
+        # @private
+        #def inspect
+            #self
+        #end
 
         def abort_operation
         end
@@ -79,6 +85,7 @@ module Sketchup
 
         # @return [Layers]
         def layers
+            @layers
         end
 
         def list_datums
@@ -86,6 +93,7 @@ module Sketchup
 
         # @return [Materials]
         def materials
+            @materials
         end
 
         def mipmapping=
@@ -99,10 +107,12 @@ module Sketchup
         def name=
         end
         def options
+            @options
         end
 
         # @return a reference to the model's Pages (Scenes) collection.
         def pages
+            @pages
         end
 
         def path
@@ -128,6 +138,7 @@ module Sketchup
 
         # @return a collection of selected Entity objects
         def selection
+            @selection
         end
 
         # @see Model#get_attribute

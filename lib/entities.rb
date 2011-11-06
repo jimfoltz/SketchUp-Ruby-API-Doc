@@ -5,10 +5,17 @@ module Sketchup
 	# @private
         def initialize
             #@model = Sketchup::Model.new
+	    @list = []
         end
+
+	# @private
+	def inspect
+	    @list
+	end
 
         def [](o)
         end
+
         def add_3d_text
         end
         def add_arc(center, xaxis, normal, radius, start_angle, end_angle, segments = 12)
@@ -21,7 +28,9 @@ module Sketchup
         end
 
         def add_cpoint(pt)
-            Sketchup::ConstructionPoint.new(pt)
+            pt = Sketchup::ConstructionPoint.new(pt)
+	    @list.push(pt)
+	    return(pt)
         end
 
         def add_curve
@@ -34,12 +43,13 @@ module Sketchup
         #
         # @return [Array<Sketchup::Edge>] if successful
         def add_edges(*args)
-            edges = []
+	    edges = []
             len = args.length
             (len-1).times {|i| 
                 edge = Edge.new(args[i], args[i+1])
                 edges.push(edge)
             }
+	    @list.concat(edges)
             return(edges)
         end
         def add_face
