@@ -5,23 +5,23 @@
 
 module Sketchup
 
+    # *The* model!
+    #
     # @example
     #   model = Sketchup.active_model
-    #   ==> #<Sketchup::Model:0x7a8d200>
-    #   entities = model.entities
-    #   layers = model.layers
     #
     # @return [Model] the current active model. 
-    #   On Windows, there is only a single active model.
+    # @note  On Windows, there is only a single active model.
     #   Since the Mac version of SketchUp 
     #   can have multiple models open, this returns the currently focused model.
+    #
     def self.active_model
         if @model.class != Sketchup::Model
             @model = Sketchup::Model.new
         end
     end
 
-    # Attaches an AppObserver to the current SketchUp Application. You should retain a
+    # Attaches an {AppObserver} to the current SketchUp Application. You should retain a
     # reference to the observer if you need to {remove_observer remove} it at a later time.
     #
     # @example
@@ -31,6 +31,8 @@ module Sketchup
     # @param [AppObserver] an instance of an AppObserver
     #
     # @return status true if successful, false if not.
+    #
+    # @see #remove_observer
     #
     def self.add_observer(app_observer)
     end
