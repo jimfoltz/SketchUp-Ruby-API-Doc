@@ -1,3 +1,4 @@
+module Geom
 class Transformation
     def *
     end
@@ -33,4 +34,5 @@ class Transformation
     end
     def zaxis
     end
+end
 end

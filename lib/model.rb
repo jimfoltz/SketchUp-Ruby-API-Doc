@@ -40,14 +40,19 @@ class Model
     def edit_transform
     end
 
-    # @return [Entities]
+    # Returns a reference to the active_model's top-level entities collection.
+    # @return [Entities] collection
+    # @see active_entities
     def entities
     end
 
     def export
     end
+    
+    # @see set_attribute
     def get_attribute
     end
+
     def get_datum
     end
     def get_product_family
@@ -82,8 +87,11 @@ class Model
     end
     def options
     end
+
+    # @return a reference to the model's Pages (Scenes) collection.
     def pages
     end
+
     def path
     end
     def place_component
@@ -104,24 +112,42 @@ class Model
     end
     def select_tool
     end
+    
+    # @return a collection of selected Entity objects
     def selection
     end
+
+    # @see Model#get_attribute
     def set_attribute
     end
+
     def set_datum
     end
+    
+    # @return [ShadowInfo] object
     def shadow_info
     end
-    def start_operation
+
+    # @overload start_operation(op_name) @since 6.0
+    # @param [String] op_name the name which appears 
+    # @since 7.0
+    # @overload start_operation(op_name, disable_ui, trasnparent, prev)
+    # @param [Boolean] disable_ui user interface changes are suppressed.
+    def start_operation(op_name)
     end
+
     def styles
     end
     def tags
     end
     def tags=
     end
+
+    # The name of the model
+    # @return [String] model name
     def title
     end
+
     def tools
     end
     def utm_to_point

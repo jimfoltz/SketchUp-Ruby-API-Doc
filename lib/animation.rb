@@ -1,3 +1,4 @@
+# @abstract
 class Animation
     def nextFrame
     end
