@@ -1,5 +1,5 @@
 module Sketchup
-class SectionPlane
+class SectionPlane < Drawingelement
     def get_plane
     end
     def set_plane

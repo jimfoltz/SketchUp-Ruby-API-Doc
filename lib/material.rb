@@ -1,5 +1,6 @@
 module Sketchup
 class Material
+    include Comparable
     def <=>
     end
     def ==

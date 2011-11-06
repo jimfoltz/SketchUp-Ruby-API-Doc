@@ -1,5 +1,5 @@
 module Sketchup
-class ConstructionPoint
+class ConstructionPoint < Drawingelement
     def position
     end
 end

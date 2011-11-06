@@ -1,5 +1,5 @@
 module Sketchup
-class PagesObserver
+class PagesObserver < EntitiesObserver
     def onContentsModified
     end
     def onElementAdded

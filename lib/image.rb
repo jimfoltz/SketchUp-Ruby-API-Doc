@@ -1,5 +1,5 @@
 module Sketchup
-class Image
+class Image < Drawingelement
     def explode
     end
     def height

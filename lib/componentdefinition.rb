@@ -1,5 +1,6 @@
 module Sketchup
 class ComponentDefinition < Drawingelement
+    include Comparable
     def <=>
     end
     def ==

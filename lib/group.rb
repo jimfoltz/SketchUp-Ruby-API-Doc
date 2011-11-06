@@ -1,5 +1,5 @@
 module Sketchup
-class Group
+class Group < Drawingelement
     def add_observer
     end
     def copy

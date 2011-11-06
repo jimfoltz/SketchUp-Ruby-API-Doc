@@ -1,5 +1,6 @@
 module Sketchup
 class Materials
+    include Enumberable
     def []
     end
     def add

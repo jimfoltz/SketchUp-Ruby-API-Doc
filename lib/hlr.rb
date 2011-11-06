@@ -1,11 +1,11 @@
-# @deprecated Undocumented Class
 module Sketchup
-class HLR
-    def calculate
+    # @deprecated Undocumented Class
+    class HLR
+        def calculate
+        end
+        def cleanup
+        end
+        def num_faces
+        end
     end
-    def cleanup
-    end
-    def num_faces
-    end
-end
 end

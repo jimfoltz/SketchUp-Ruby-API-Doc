@@ -1,5 +1,6 @@
 module Sketchup
 class Pages
+    include Enumberable
     def []
     end
     def add

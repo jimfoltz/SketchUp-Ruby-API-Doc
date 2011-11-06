@@ -1,5 +1,6 @@
 module Sketchup
 class DefinitionList
+    include Enumberable
     def []
     end
     def add

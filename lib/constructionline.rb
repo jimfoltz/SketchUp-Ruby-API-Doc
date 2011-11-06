@@ -1,5 +1,5 @@
 module Sketchup
-class ConstructionLine
+class ConstructionLine < Drawingelement
     def direction
     end
     def direction=

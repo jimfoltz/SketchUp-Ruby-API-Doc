@@ -1,5 +1,6 @@
 module Sketchup
 class Layer
+    include Comparable
     def <=>
     end
     def ==

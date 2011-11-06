@@ -1,5 +1,5 @@
 module Sketchup
-class DefinitionObserver
+class DefinitionObserver < EntityObserver
     def onComponentInstanceAdded
     end
     def onComponentInstanceRemoved

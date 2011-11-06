@@ -1,5 +1,6 @@
 module Sketchup
 class OptionsProvider
+    include Enumberable
     def []
     end
     def []=

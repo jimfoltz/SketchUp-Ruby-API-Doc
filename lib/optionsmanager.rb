@@ -1,5 +1,6 @@
 module Sketchup
 class OptionsManager
+    include Enumberable
     def []
     end
     def count

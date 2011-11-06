@@ -1,5 +1,5 @@
 module Sketchup
-class Text
+class Text < Drawingelement
     def arrow_type
     end
     def arrow_type=

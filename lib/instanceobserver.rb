@@ -1,5 +1,5 @@
 module Sketchup
-class InstanceObserver
+class InstanceObserver < EntityObserver
     def onClose
     end
     def onOpen

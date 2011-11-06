@@ -1,5 +1,6 @@
 module Sketchup
 class AttributeDictionary
+    include Enumerable
     def []
     end
     def []=

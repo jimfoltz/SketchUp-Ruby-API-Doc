@@ -1,5 +1,5 @@
 module Sketchup
-class Edge
+class Edge < Drawingelement
     def all_connected
     end
     def common_face

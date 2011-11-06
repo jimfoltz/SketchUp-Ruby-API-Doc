@@ -1,5 +1,6 @@
 module Sketchup
     class Entities
+        include Enumberable
         def initialize(model)
             @model = model
         end

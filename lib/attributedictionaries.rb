@@ -1,5 +1,6 @@
 module Sketchup
 class AttributeDictionaries < Entity
+    include Enumerable
     def []
     end
     def delete

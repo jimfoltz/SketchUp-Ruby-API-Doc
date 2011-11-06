@@ -1,5 +1,5 @@
 module Sketchup
-class ComponentInstance
+class ComponentInstance < Drawingelement
     def add_observer
     end
     def definition

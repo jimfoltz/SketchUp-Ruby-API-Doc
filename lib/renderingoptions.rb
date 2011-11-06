@@ -1,5 +1,6 @@
 module Sketchup
 class RenderingOptions
+    include Enumberable
     def []
     end
     def []=
