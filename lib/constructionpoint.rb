@@ -1,4 +1,5 @@
 module Sketchup
+    # @ since 6.0
     class ConstructionPoint < Drawingelement
 
         # @private
