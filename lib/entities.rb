@@ -10,8 +10,12 @@ module Sketchup
 
 	# @private
 	def inspect
-	    @list
+	    @list.to_s
 	end
+        # @private
+        def empty?
+            @list.empty?
+        end
 
         def [](o)
         end
