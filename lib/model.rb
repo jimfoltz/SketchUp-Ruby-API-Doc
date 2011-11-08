@@ -152,11 +152,20 @@ module Sketchup
         def shadow_info
         end
 
-        # @overload start_operation(op_name) @since 6.0
-        # @param [String] op_name the name which appears 
-        # @since 7.0
-        # @overload start_operation(op_name, disable_ui, trasnparent, prev)
-        # @param [Boolean] disable_ui user interface changes are suppressed.
+        # The start_operation method is used to notify Edit > Undo that a new operation (which can be undone) is starting.
+        # 
+        # @overload start_operation(op_name)
+        #   @since SketchUp 6.0
+        #   @param [String] op_name the name which appears 
+        #
+        # @overload start_operation(op_name [,disable_ui, transparent, prev_trans])
+        #   @since SketchUp 7.0
+        #   @param [String] op_name optional the name which appears 
+        #   @param [optional, true/false] disable_ui user interface changes are suppressed.
+        #   @param [Boolean] transparent
+        #   @param [Boolean] prev_trans
+        #
+        # @return [bool] true if successful, false if not.
         def start_operation(op_name)
         end
 
