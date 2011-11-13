@@ -1,9 +1,19 @@
 # In addition to the built-in {http://www.ruby-doc.org/core-1.8.6/Array.html Ruby Array} methods, the following methods have been added by SketchUp.
+# @note Arrays may be used as both Point3d and Vector3d objects depending on  how they are used.
 class Array
     def cross
     end
-    def distance
+
+    # @param [Point3d, Array(3)]
+    #
+    # @example
+    #   [0, 0].distance([1, 1])
+    #   ==> 1.4142135623731
+    #
+    # @return [Length] a Length
+    def distance(pt3d_or_array)
     end
+
     def distance_to_line
     end
     def distance_to_plane
