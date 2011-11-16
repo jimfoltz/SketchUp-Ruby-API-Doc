@@ -17,8 +17,11 @@ module Geom
         # @since SketchUp 6.0
         def +(vector)
         end
-
-        def -
+	
+	# Returns a Vector3d from 
+	# @param [Point3d] point 
+	# @return [Vector3d]
+        def -(point)
         end
 
         def <
