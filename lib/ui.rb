@@ -42,29 +42,41 @@ module UI
 
     def self.messagebox
     end
+    
+    # Display a list of the names of the available tabs in the Model Info Window.
     def self.model_info_pages
     end
+
     def self.openURL
     end
+
+    # File selection dialog.
     def self.openpanel
     end
+
     def self.play_sound
     end
+    
+    # @see show_preferences
     def self.preferences_pages
     end
+
     def self.refresh_inspectors
     end
+
+    # File save dialog
     def self.savepanel
     end
+
     def self.set_cursor
     end
     def self.set_toolbar_visible
     end
     def self.show_inspector
     end
-    def self.show_model_info
+    def self.show_model_info(page)
     end
-    def self.show_preferences
+    def self.show_preferences(page)
     end
     def self.start_timer
     end
