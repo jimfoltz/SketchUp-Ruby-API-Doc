@@ -16,7 +16,21 @@ class View
     end
     def draw
     end
-    def draw2d
+
+    # Used to draw temporary geometry on the screen rather than 3d space.
+    #
+    #  Object.constants.grep(/GL_/).sort
+    #  ["GL_LINES", "GL_LINE_LOOP", "GL_LINE_STRIP", "GL_POINTS", "GL_POLYGON", "GL_QUADS", "GL_QUAD_STRIP", "GL_TRIANGLES", "GL_TRIANGLE_FAN", "GL_TRIANGLE_STRIP"]
+    #
+    # @example
+    #   view.draw2d(GL_POINTS, [ [0, 0], [1, 0], [1, 1], [0, 1] ])
+    #   
+    # @param  opengl_primitive  Ruby Constant mapped to an OpenGL primitive type.
+    #
+    # @param [Array] points An Array of 2d screen coordinates in pixels.
+    #
+    # @return [View] the View
+    def draw2d(opengl_primitive, points)
     end
     def draw_line
     end
