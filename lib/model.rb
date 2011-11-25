@@ -1,4 +1,5 @@
 module Sketchup
+    # This is the access point for many common Sketchup objects
     class Model
         # @private
         def initialize
@@ -20,14 +21,23 @@ module Sketchup
 
         def abort_operation
         end
+
+        # @return [Sketchup::Entities]
         def active_entities
         end
+
+        # @return [Sketchup::Layer]
         def active_layer
         end
+
+        # @param [Layer]
         def active_layer=
         end
+
         def active_path
         end
+
+        # @return [View]
         def active_view
         end
         def add_note
@@ -49,6 +59,8 @@ module Sketchup
         end
         def commit_operation
         end
+
+        # @return [DefinitionList]
         def definitions
         end
         def description
@@ -127,6 +139,8 @@ module Sketchup
         end
         def remove_observer
         end
+
+        # @return [RenderingOptions]
         def rendering_options
         end
         def save

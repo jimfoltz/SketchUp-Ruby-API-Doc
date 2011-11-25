@@ -5,7 +5,7 @@
 
 module Sketchup
 
-    # *The* model!
+    # _The_ model!
     #
     # @example
     #   model = Sketchup.active_model
@@ -77,7 +77,14 @@ module Sketchup
     end
     def self.is_valid_filename?
     end
-    def self.load
+
+    # Loads both encrypted (.rbs) and non-encrypted Ruby files.
+    # @example
+    #   status = Sketchup.load("C:/cool_plugins.rbs")
+    #
+    # @param [String] file path to a file
+    # @return [Boolean] true if successful, otherwise false
+    def self.load(file)
     end
     def self.open_file
     end
@@ -85,6 +92,7 @@ module Sketchup
     end
     def self.parse_length
     end
+    # @see write_default
     def self.read_default
     end
     def self.register_extension
@@ -160,6 +168,7 @@ module Sketchup
     # @param [String] key
     # @param [String, Array, Numeric] value the value to store
     # @return [Boolean] true if success, false if not.
+    # @see read_default
     def self.write_default(section, key, value)
     end
 end

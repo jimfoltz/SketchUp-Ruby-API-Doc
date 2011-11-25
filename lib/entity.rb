@@ -1,6 +1,9 @@
 module Sketchup
 class Entity
-    def add_observer
+
+    # @param [EntityObserver] entity_observer
+    # @return [Boolean]
+    def add_observer(entity_observer)
     end
     def attribute_dictionaries
     end
@@ -14,11 +17,17 @@ class Entity
     end
     def get_attribute
     end
+
+    # Returns the Model of the receiver
+    # @example
+    #   model = face.model
+    # @return [Sketchup::Model] the Model of the entity
     def model
     end
     def parent
     end
-    def remove_observer
+    # @param [ModelObserver] model_observer a instance of a model observer
+    def remove_observer(model_observer)
     end
     def set_attribute
     end
