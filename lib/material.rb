@@ -9,6 +9,8 @@ class Material < Entity
     end
     def alpha=
     end
+
+    # @return [Sketchup::Color] the Color of the Material
     def color
     end
     def color=

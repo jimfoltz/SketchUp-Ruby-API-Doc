@@ -1,5 +1,7 @@
 module Sketchup
 class Drawingelement < Entity
+
+    # @return [Geom::BoundingBox] 
     def bounds
     end
     def casts_shadows=
@@ -12,10 +14,14 @@ class Drawingelement < Entity
     end
     def hidden?
     end
+
+    # @return [Layer]
     def layer
     end
     def layer=
     end
+
+    # @return [Material] or nil if default material.
     def material
     end
     def material=
