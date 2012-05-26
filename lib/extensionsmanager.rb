@@ -1,3 +1,5 @@
+module Sketchup
+
 # @since SketchUp 8.0 M2
 class ExtensionsManager
 	# @return [SketchupExtension]
@@ -22,4 +24,5 @@ class ExtensionsManager
 	def intitialize
 	end
 	
+end
 end
