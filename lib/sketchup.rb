@@ -71,6 +71,13 @@ module Sketchup
     end
     def self.get_shortcuts
     end
+	# Installs the contents of a ZIP archive file into SketchUp's Plugins folder. If the ZIP contains subfolders, these will be preserved.
+	# @since SketchUp 8.0 M2
+	# @return [ExtensionManager]
+	def self.install_from_archive(path)
+	
+	end
+	
     def self.is_online
     end
     def self.is_pro?
