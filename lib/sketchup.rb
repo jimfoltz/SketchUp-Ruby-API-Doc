@@ -108,7 +108,8 @@ module Sketchup
     def self.parse_length
     end
 	# @since SketchUp 8.0 M2
-	def self.plugins_disabled=
+	# @param [Boolean] true_or_false true or false
+	def self.plugins_disabled=(true_or_false)
 	end
 	# @since SketchUp 8.0 M2
 	def self.plugins_disabled?
