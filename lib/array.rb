@@ -1,5 +1,5 @@
 # In addition to the built-in {http://www.ruby-doc.org/core-1.8.6/Array.html Ruby Array} methods, the following methods have been added by SketchUp.
-# @not In SketchUp, Arrays may be used as both Point3d and Vector3d objects depending on  how they are used.
+# @note In SketchUp, Arrays may be used as both Point3d and Vector3d objects depending on  how they are used.
 class Array
     def cross
     end
