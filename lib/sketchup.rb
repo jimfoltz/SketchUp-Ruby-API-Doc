@@ -47,6 +47,14 @@ module Sketchup
     end
     def self.display_name_from_action
     end
+	
+	# @since SketchUp 8.0 M2
+	# @return [ExtensionsManager]
+	# @see https://developers.google.com/sketchup/docs/ourdoc/sketchup#extensions
+	# @see https://developers.google.com/sketchup/docs/ourdoc/extensionsmanager
+	def self.extensions
+	end
+	
     def self.file_new
     end
     def self.find_support_file
@@ -99,6 +107,13 @@ module Sketchup
     end
     def self.parse_length
     end
+	# @since SketchUp 8.0 M2
+	def self.plugins_disabled=
+	end
+	# @since SketchUp 8.0 M2
+	def self.plugins_disabled?
+	end
+	
     # @see write_default
     def self.read_default
     end

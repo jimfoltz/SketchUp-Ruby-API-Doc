@@ -11,6 +11,19 @@ class SketchupExtension
     end
     def description=
     end
+	# @since SketchUp 8.0 M2
+	def load_on_start?
+	end
+	# @since SketchUp 8.0 M2
+	def loaded?
+	end
+	# @since SketchUp 8.0 M2
+	def registered?
+	end
+	# @since SketchUp 8.0 M2
+	def uncheck
+	end
+	
     def name
     end
     def name=
