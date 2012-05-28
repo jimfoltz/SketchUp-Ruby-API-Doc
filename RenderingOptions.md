@@ -1,0 +1,61 @@
+# RenderingOptions #
+
+## List of RendingOptions keys ##:
+
+- BackgroundColor
+- BandColor
+- ConstructionColor
+- DepthQueWidth
+- DisplayColorByLayer
+- DisplayDims
+- DisplayFog
+- DisplayInstanceAxes
+- DisplaySketchAxes
+- DisplayText
+- DisplayWatermarks
+- DrawDepthQue
+- DrawGround
+- DrawHidden
+- DrawHorizon
+- DrawLineEnds
+- DrawProfilesOnly
+- DrawSilhouettes
+- DrawUnderground
+- EdgeColorMode
+- EdgeDisplayMode
+- EdgeType
+- ExtendLines
+- FaceBackColor
+- FaceColorMode
+- FaceFrontColor
+- FogColor
+- FogEndDist
+- FogStartDist
+- FogUseBkColor
+- ForegroundColor
+- GroundColor
+- GroundTransparency
+- HideConstructionGeometry
+- HighlightColor
+- HorizonColor
+- InactiveFade
+- InactiveHidden
+- InstanceFade
+- InstanceHidden
+- JitterEdges
+- LineEndWidth
+- LineExtension
+- LockedColor
+- MaterialTransparency
+- ModelTransparency
+- RenderMode
+- SectionActiveColor
+- SectionCutWidth
+- SectionDefaultCutColor
+- SectionInactiveColor
+- ShowViewName
+- SilhouetteWidth
+- SkyColor
+- Texture
+- TransparencySort
+

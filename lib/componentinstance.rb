@@ -8,6 +8,9 @@ class ComponentInstance < Drawingelement
     end
     def explode
     end
+	# @since 8.0
+	def equals?
+	end
     def glued_to
     end
     def glued_to=

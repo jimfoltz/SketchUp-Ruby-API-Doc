@@ -1,21 +1,22 @@
 module Sketchup
-class ShadowInfo < Entity
-    include Enumerable
-    def []
+
+    class ShadowInfo < Entity
+        include Enumerable
+        def []
+        end
+        def []=
+        end
+        def add_observer
+        end
+        def each
+        end
+        def each_key
+        end
+        def each_pair
+        end
+        def keys
+        end
+        def remove_observer
+        end
     end
-    def []=
-    end
-    def add_observer
-    end
-    def each
-    end
-    def each_key
-    end
-    def each_pair
-    end
-    def keys
-    end
-    def remove_observer
-    end
-end
 end
