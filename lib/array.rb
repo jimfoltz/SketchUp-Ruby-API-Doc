@@ -4,13 +4,13 @@ class Array
     def cross
     end
 
-    # @param [Point3d, Array(3)]
+    # @param [Sketchup::Point3d]
     #
     # @example
     #   [0, 0].distance([1, 1])
     #   ==> 1.4142135623731
     #
-    # @return [Length] a Length
+    # @return [Sketchup::Length] 
     def distance(pt3d_or_array)
     end
 

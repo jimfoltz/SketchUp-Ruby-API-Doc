@@ -1,6 +1,6 @@
 # RenderingOptions #
 
-## List of RendingOptions keys ##:
+## List of RendingOptions keys ##
 
 - BackgroundColor
 - BandColor
