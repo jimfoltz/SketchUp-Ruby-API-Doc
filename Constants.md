@@ -1,17 +1,57 @@
 `Object.constants.sort.join("\n") `
 
+Geometry
+
+        ORIGIN Point3d(0,  0,  0)
+        X_AXIS Vector3d(1, 0, 0)
+        Y_AXIS Vector3d(0, 1, 0)
+        Z_AXIS Vector3d(0, 0, 1)
+
+StatusBar Locations
+
+        SB_PROMPT
+        SB_VCB_LABEL
+        SB_VCB_VALUE
+
+Messagebox Types
+
+        MB_ABORTRETRYIGNORE
+        MB_MULTILINE
+        MB_OK
+        MB_OKCANCEL
+        MB_RETRYCANCEL
+        MB_YESNO
+        MB_YESNOCANCEL
+
+Messagebox Return Values
+
+        IDABORT
+        IDCANCEL
+        IDENTITY
+        IDIGNORE
+        IDNO
+        IDOK
+        IDRETRY
+        IDYES
+
+Toolbar 
+
+        TB_HIDDEN
+        TB_NEVER_SHOWN
+        TB_VISIBLE
+
+Yet Unfiled
+
         ALT_MODIFIER_KEY
         ALT_MODIFIER_MASK
+
         ALeaderModel
         ALeaderNone
         ALeaderView
         ARGF
         ARGV
         AddDetailTool
-        ArgumentError
-        Array
-        Bignum
-        Binding
+        
         CMD_ARC
         CMD_CAMERA_UNDO
         CMD_CIRCLE
@@ -79,10 +119,12 @@
         CMD_ZOOM
         CMD_ZOOM_EXTENTS
         CMD_ZOOM_WINDOW
+
         CONSTRAIN_MODIFIER_KEY
         CONSTRAIN_MODIFIER_MASK
         COPY_MODIFIER_KEY
         COPY_MODIFIER_MASK
+
         CameraAppObserver
         CameraEntityObserver
         CameraFrameChangeObserver
@@ -134,6 +176,7 @@
         FromContoursTool
         FromScratchTool
         GC
+
         GL_LINES
         GL_LINE_LOOP
         GL_LINE_STRIP
@@ -144,43 +187,34 @@
         GL_TRIANGLES
         GL_TRIANGLE_FAN
         GL_TRIANGLE_STRIP
+
         Geom
         Hash
-        IDABORT
-        IDCANCEL
-        IDENTITY
-        IDIGNORE
-        IDNO
-        IDOK
-        IDRETRY
-        IDYES
+
         IO
         IOError
         IndexError
         Integer
         Interrupt
         Kernel
+
         LAYER_HIDDEN_BY_DEFAULT
         LAYER_IS_HIDDEN_ON_NEW_PAGES
         LAYER_IS_VISIBLE_ON_NEW_PAGES
         LAYER_USES_DEFAULT_VISIBILITY_ON_NEW_PAGES
         LAYER_VISIBLE_BY_DEFAULT
+
         LanguageHandler
         Length
         LoadError
         LocalJumpError
-        MB_ABORTRETRYIGNORE
-        MB_MULTILINE
-        MB_OK
-        MB_OKCANCEL
-        MB_RETRYCANCEL
-        MB_YESNO
-        MB_YESNOCANCEL
+
         MF_CHECKED
         MF_DISABLED
         MF_ENABLED
         MF_GRAYED
         MF_UNCHECKED
+
         MK_ALT
         MK_COMMAND
         MK_CONTROL
@@ -188,6 +222,7 @@
         MK_MBUTTON
         MK_RBUTTON
         MK_SHIFT
+
         Marshal
         MatchData
         MatchingData
@@ -201,9 +236,9 @@
         NoMethodError
         NotImplementedError
         Numeric
-        ORIGIN
         Object
         ObjectSpace
+
         PAGE_NO_CAMERA
         PAGE_USE_ALL
         PAGE_USE_CAMERA
@@ -213,6 +248,7 @@
         PAGE_USE_SECTION_PLANES
         PAGE_USE_SHADOWINFO
         PAGE_USE_SKETCHCS
+
         PLATFORM
         PageNameChangeObserver
         Precision
@@ -228,9 +264,7 @@
         Regexp
         RegexpError
         RuntimeError
-        SB_PROMPT
-        SB_VCB_LABEL
-        SB_VCB_VALUE
+
         SKETCHUP_CONSOLE
         SKSocket
         STDERR
@@ -257,16 +291,17 @@
         SystemCallError
         SystemExit
         SystemStackError
-        TB_HIDDEN
-        TB_NEVER_SHOWN
-        TB_VISIBLE
+
+
         TOPLEVEL_BINDING
         TRUE
         Terrain
         Test
+
         TextAlignCenter
         TextAlignLeft
         TextAlignRight
+
         Thread
         ThreadError
         ThreadGroup
@@ -276,6 +311,7 @@
         UI
         UnboundMethod
         VERSION
+
         VK_ALT
         VK_COMMAND
         VK_CONTROL
@@ -292,8 +328,11 @@
         VK_SHIFT
         VK_SPACE
         VK_UP
+
         WebTextures
-        X_AXIS
-        Y_AXIS
-        Z_AXIS
         ZeroDivisionError
+
+        ArgumentError
+        Array
+        Bignum
+        Binding
