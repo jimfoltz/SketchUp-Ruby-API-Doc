@@ -1,3 +1,3 @@
---files RenderingOptions.md
+--files RenderingOptions.md Constants.md
 --no-private
 lib/**/*
