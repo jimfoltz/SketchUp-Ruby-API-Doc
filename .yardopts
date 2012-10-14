@@ -1,3 +1,6 @@
---files RenderingOptions.md Constants.md
+--readme README
 --no-private
+-
 lib/**/*
+RenderingOptions.md
+Constants.md
