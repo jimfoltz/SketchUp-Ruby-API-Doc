@@ -114,8 +114,12 @@ module Sketchup
         end
         def modified?
         end
+
+        # The model name, or "" if model as not been saved.
+        # @return [String]
         def name
         end
+
         def name=
         end
         def options
