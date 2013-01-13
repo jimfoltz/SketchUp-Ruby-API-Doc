@@ -1,5 +1,10 @@
 module Sketchup
 class Importer
+    ImportCanceled = 2
+    ImportFail = 1
+    ImportFileNotFound = 4
+    ImportSuccess = 0
+    ImporterNotFound = 3
     def description
     end
     def do_options
