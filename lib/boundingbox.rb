@@ -1,6 +1,7 @@
 module  Geom
 class BoundingBox
-    def add
+    # @return [Geom::BoundingBox]
+    def add(things)
     end
     
     # @return [Geom::Point3d] the center point of the BoundingBox
