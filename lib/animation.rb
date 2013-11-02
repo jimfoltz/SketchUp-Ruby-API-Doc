@@ -1,6 +1,7 @@
 # @abstract
-## @example
-# # This is an example of a simple animation that floats the camera up to
+# @example
+#
+#     # This is an example of a simple animation that floats the camera up to
 #     # a z position of 200". The only required method for an animation is
 #     # nextFrame. It is called whenever you need to show the next frame of
 #     # the animation. If nextFrame returns false, the animation will stop.
@@ -18,7 +19,6 @@
 #     UI.menu("Camera").add_item("Run Float Up Animation") {
 #       Sketchup.active_model.active_view.animation = FloatUpAnimation.new
 #     } 
-## 
 class Animation
     # @param [Sketchup::View] view
     # @return [Boolean] true if you want the animation to continue on to the next frame, false if you want the animation to stop after this frame.
