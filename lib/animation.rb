@@ -5,10 +5,18 @@ class Animation
     def nextFrame(view)
         # 
     end
+
+    # @return [nil]
     def pause
+      return nil
     end
+
+    # @return [nil)
     def resume
+      return nil
     end
+
     def stop
+      return nil
     end
 end
