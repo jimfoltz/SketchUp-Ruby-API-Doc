@@ -9,6 +9,8 @@ class DefinitionList < Entity
     end
     def at
     end
+
+    # @since SketchUp 2014 this is inherited from [Enumerable]
     def count
     end
     def each

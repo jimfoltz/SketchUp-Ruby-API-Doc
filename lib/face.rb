@@ -1,5 +1,21 @@
 module Sketchup
-class Face < Drawingelement
+  class Face < Drawingelement
+
+    # @since SketchUp 2014
+    # @return [Vector3d]
+    # @param [Boolean] use_front_side
+    def get_texture_projection(use_front_side)
+    end
+
+
+    # @since SketchUp 2014
+    # @param [Vector3d] vector
+    # @param [Boolean] use_front_side
+    # @return true or false
+    def set_texture_projection(vector, use_front_side)
+    end
+
+
     def all_connected
     end
     def area
@@ -40,5 +56,5 @@ class Face < Drawingelement
     end
     def vertices
     end
-end
+  end
 end

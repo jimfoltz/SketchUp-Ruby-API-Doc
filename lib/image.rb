@@ -20,6 +20,15 @@ class Image < Drawingelement
     end
     def size=
     end
+
+    # @since SketchUp 2014
+    def transformation
+    end
+
+    # @since SketchUp 2014
+    def transformation=
+    end
+
     def transform!
     end
     def width

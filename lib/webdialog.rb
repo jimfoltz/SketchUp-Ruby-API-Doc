@@ -38,6 +38,12 @@ class WebDialog
     end
     def post_url
     end
+
+    # @since SketchUp 2014
+    # @return [Integer] screen scale factor
+    def screen_scale_factor
+    end
+
     def set_background_color
     end
     def set_file

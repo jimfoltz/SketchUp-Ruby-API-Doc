@@ -26,6 +26,11 @@ class PolygonMesh
     end
     def set_point
     end
+
+    # @since SketchUp 2014
+    def set_uv
+    end
+
     def transform!
     end
     def uv_at

@@ -1,5 +1,5 @@
 module Sketchup
-class ComponentInstance < Drawingelement
+  class ComponentInstance < Drawingelement
     def add_observer
     end
     def definition
@@ -8,13 +8,20 @@ class ComponentInstance < Drawingelement
     end
     def explode
     end
-	# @since 8.0
-	def equals?
-	end
+    # @since 8.0
+    def equals?
+    end
     def glued_to
     end
     def glued_to=
     end
+
+    # Returns a base 64 unique id for this object
+    # @since Sketchup 2014
+    # @return [String]
+    def guid
+    end
+
     def locked=
     end
     def locked?
@@ -35,5 +42,5 @@ class ComponentInstance < Drawingelement
     end
     def transformation=
     end
-end
+  end
 end

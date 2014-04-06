@@ -1,5 +1,13 @@
 module UI
-class Toolbar
+
+  class Toolbar
+
+    include Enumerable
+
+    def length
+    end
+    alias_method :size, :length
+
     def add_item
     end
     def add_separator
@@ -16,5 +24,7 @@ class Toolbar
     end
     def visible?
     end
-end
+
+  end
+
 end

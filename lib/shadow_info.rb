@@ -1,7 +1,15 @@
 module Sketchup
 
     class ShadowInfo < Entity
+
         include Enumerable
+
+
+        # @since SketchUp2014
+        def length
+        end
+        alias_method :size, :length
+
         def []
         end
         def []=

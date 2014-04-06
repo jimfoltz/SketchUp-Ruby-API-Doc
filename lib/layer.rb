@@ -5,6 +5,19 @@ class Layer < Entity
     end
     def ==
     end
+
+    # @since SketchUp 2014
+    def color
+    end
+
+    # @since SketchUp 2014
+    def color=
+    end
+
+    # @since SketchUp 2014
+    def size
+    end
+
     def name
     end
     def name=

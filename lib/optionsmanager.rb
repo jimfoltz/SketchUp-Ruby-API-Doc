@@ -9,6 +9,11 @@ module Sketchup
         end
         def keys
         end
+
+        # @since SketchUp 2014
+        def length
+        end
+
         def size
         end
     end

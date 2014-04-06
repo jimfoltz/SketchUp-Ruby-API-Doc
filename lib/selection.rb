@@ -27,8 +27,11 @@ module Sketchup
         end
         def is_surface?
         end
+
         def length
         end
+        alias_method :size, :length
+
         def model
         end
         def nitems
@@ -41,6 +44,7 @@ module Sketchup
         end
         def single_object?
         end
+
         def toggle
         end
     end

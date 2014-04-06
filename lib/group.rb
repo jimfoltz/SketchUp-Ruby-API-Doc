@@ -1,5 +1,11 @@
 module Sketchup
-class Group < Drawingelement
+  class Group < Drawingelement
+
+    # @since SketchUp 2014
+    # @return [String] unique_id
+    def guid
+    end
+
     def add_observer
     end
     def copy
@@ -36,5 +42,5 @@ class Group < Drawingelement
     end
     def transformation=
     end
-end
+  end
 end

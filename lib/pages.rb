@@ -17,6 +17,11 @@ class Pages < Entity
     end
     def erase
     end
+
+    # @since SketchUp 2014
+    def length
+    end
+
     def parent
     end
     def remove_frame_change_observer

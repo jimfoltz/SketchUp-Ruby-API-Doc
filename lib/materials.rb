@@ -1,6 +1,9 @@
 module Sketchup
-class Materials < Entity
+
+  class Materials < Entity
+
     include Enumerable
+
     def []
     end
     def add
@@ -23,5 +26,11 @@ class Materials < Entity
     end
     def remove_observer
     end
-end
+
+    # @since SketchUp 2014
+    def size
+    end
+
+  end
+
 end

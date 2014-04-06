@@ -1,6 +1,9 @@
 module Sketchup
-class Styles < Entity
+
+  class Styles < Entity
+
     include Enumerable
+
     def []
     end
     def active_style
@@ -13,6 +16,11 @@ class Styles < Entity
     end
     def each
     end
+
+    # @since SketchUp 2014
+    def length
+    end
+
     def parent
     end
     def purge_unused
@@ -25,5 +33,7 @@ class Styles < Entity
     end
     def update_selected_style
     end
-end
+
+  end
+
 end

@@ -149,6 +149,11 @@ module Sketchup
         end
         def save
         end
+
+        # @since SketchUp 2014
+        def save_copy
+        end
+
         def save_thumbnail
         end
         def select_tool

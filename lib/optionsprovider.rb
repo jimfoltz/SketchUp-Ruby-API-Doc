@@ -23,6 +23,11 @@ class OptionsProvider
     end
     def keys
     end
+
+    # @since SketchUp 2014
+    def length
+    end
+
     def name
     end
     def remove_observer

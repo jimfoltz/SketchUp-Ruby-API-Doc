@@ -1,5 +1,5 @@
 module Sketchup
-class AttributeDictionaries < Entity
+  class AttributeDictionaries < Entity
     include Enumerable
     def []
     end
@@ -7,5 +7,13 @@ class AttributeDictionaries < Entity
     end
     def each
     end
-end
+
+    # @since Sketchup 2014
+    def length
+    end
+
+    # @since SketchUp 2014
+    alias_method :size,  :length
+
+  end
 end
