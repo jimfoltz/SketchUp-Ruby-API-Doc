@@ -1,4 +1,7 @@
+# @since SketchUp 6.0
+#
 # @abstract
+#
 # @example
 #
 #     # This is an example of a simple animation that floats the camera up to
@@ -19,25 +22,37 @@
 #     UI.menu("Camera").add_item("Run Float Up Animation") {
 #       Sketchup.active_model.active_view.animation = FloatUpAnimation.new
 #     } 
+
 class Animation
-    # @param [Sketchup::View] view
-    # @return [Boolean] true if you want the animation to continue on to the next frame, false if you want the animation to stop after this frame.
-    def nextFrame(view)
-        # 
-    end
 
-    # @return [nil]
-    def pause
-      return nil
-    end
+  # The nextFrame method is invoked by SketchUp to tell the animation to display its next frame.
+  #
+  # @param [Sketchup::View] view
+  #
+  # @return [Boolean] true if you want the animation to continue on to the next frame, false if you want the animation to stop after this frame.
 
-    # @return [nil]
-    def resume
-      return nil
-    end
+  def nextFrame(view)
+    # return false
+  end
 
-    # @return [nil]
-    def stop
-      return nil
-    end
+  # The pause method is invoked by SketchUp when the animation is paused. 
+  #
+  # @return [nil]
+  def pause
+    return nil
+  end
+
+  # The resume method is invoked by SketchUp when the animation is resumed after being paused. 
+  #
+  # @return [nil]
+  def resume
+    return nil
+  end
+
+  # The stop method is invoked by SketchUp when the animation is stopped. 
+  #
+  # @return [nil]
+  def stop
+    return nil
+  end
 end

@@ -51,6 +51,12 @@ module UI
     end
 
     # File selection dialog.
+    # @version 2014
+    # @example
+    #  chosen_image = UI.openpanel("Open SKP File", "c:/", "model.skp")
+    #  chosen_image = UI.openpanel("Open Image File", "c:/", "Image Files|*.jpg;*.png;||")
+    #  chosen_image = UI.openpanel("Open CAD File", "c:/", "DXF|*.dxf|DWG|*.dwg||")
+    # 
     def self.openpanel
     end
 

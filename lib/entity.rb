@@ -13,8 +13,15 @@ class Entity
     end
     def deleted?
     end
+
+    # @since 2006
+    #   The ID is not persistent between sessions.
+    # @since 2014
+    #   Groups and ComponentInstances are persistent.
+    # @return [Fixnum] 
     def entityID
     end
+
     def get_attribute
     end
 
