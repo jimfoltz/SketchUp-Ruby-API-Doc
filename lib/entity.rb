@@ -36,8 +36,17 @@ class Entity
     # @param [ModelObserver] model_observer a instance of a model observer
     def remove_observer(model_observer)
     end
-    def set_attribute
+    
+    # Sets the value of an attibute in an AtrtributeDictonary
+    # @param dict_name [String] the name of te AttributeDictionary
+    # @param key [String] 
+    # @param value
+    #   Alowable values are:
+    #   true, false, [Length], [Integer], [Float], [String], [Array]
+    #   [Color], [Time], [Point3d], [Vector3d]
+    def set_attribute(dict_name, key, value)
     end
+    
     def to_s
     end
     def typename
