@@ -14,13 +14,15 @@ module Sketchup
       def licensed?
       end
 
-      # @return [Constant]
-      #   Sketchup::Licensing::LICENSED
-      #   Sketchup::Licensing::EXPIRED
-      #   Sketchup::Licensing::TRIAL
-      #   Sketchup::Licensing::TRIAL_EXPIRED
-      #   Sketchup::Licensing::NOT_LICENSED
+      # @return state a constantdefined in the Licensing namespace
+      #
+      #   * {Sketchup::Licensing::LICENSED}
+      #   * {Sketchup::Licensing::EXPIRED}
+      #   * {Sketchup::Licensing::TRIAL}
+      #   * {Sketchup::Licensing::TRIAL_EXPIRED}
+      #   * {Sketchup::Licensing::NOT_LICENSED}
       def state
+        return state
       end
     end
   end
