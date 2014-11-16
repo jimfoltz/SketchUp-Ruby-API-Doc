@@ -1,4 +1,5 @@
-class Set
+module Sketchup
+  class Set
     def clear
     end
     def contains?
@@ -21,4 +22,5 @@ class Set
     end
     def to_a
     end
+  end
 end
