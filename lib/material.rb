@@ -15,6 +15,18 @@ class Material < Entity
     end
     def color=
     end
+
+    # @since SketchUp 2015
+    # @return [Array]
+    def colorize_deltas
+    end
+
+    def colorize_type
+    end
+
+    def colorize_type=
+    end
+
     def display_name
     end
     def materialType

@@ -74,6 +74,16 @@ module UI
     def self.savepanel
     end
 
+    # @since 2015
+    # @param [Hash] opts the options
+    # @option opts [String] :title
+    # @option opts [String] :directory
+    # @option opts [Boolean] :select_multiple false
+    #
+    # @return [String, Array, nil] nil if user cancel
+    def self.select_directory(opts = {})
+    end
+
     def self.set_cursor
     end
     def self.set_toolbar_visible

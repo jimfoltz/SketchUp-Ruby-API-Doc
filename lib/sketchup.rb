@@ -86,6 +86,10 @@ module Sketchup
 
   end
 
+  # @since 2015
+  def self.is_64bit?
+  end
+
   def self.is_online
   end
   def self.is_pro?

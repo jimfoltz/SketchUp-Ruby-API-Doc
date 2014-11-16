@@ -17,6 +17,12 @@ class Layers < Entity
     end
     def purge_unused
     end
+
+    # @since SketchUp 2015
+    # @param layer a {Layer}, layer name, or index number
+    def remove(layer)
+    end
+
     def remove_observer
     end
     def unique_name

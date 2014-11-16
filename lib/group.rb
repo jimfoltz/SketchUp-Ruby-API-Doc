@@ -10,6 +10,12 @@ module Sketchup
     end
     def copy
     end
+
+    # @since SketchUp 2015
+    # @return [ComponentDefinition]
+    def definition
+    end
+
     def description
     end
     def description=

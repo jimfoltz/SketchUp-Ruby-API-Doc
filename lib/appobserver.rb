@@ -2,6 +2,12 @@ module Sketchup
   # {http://www.sketchup.com/intl/en/developer/docs/ourdoc/appobserver AppObserver Docs}
   class AppObserver
 
+
+    # @since SketchUp 2015
+    def onActivateModel(model)
+      return nil
+    end
+
     # @since SketchUp 2014
     # @example
     #    def expectsStartupModelNotifications

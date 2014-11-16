@@ -55,6 +55,14 @@ module Sketchup
         def bounds
         end
 
+        def classifications
+        end
+
+        # @since 2015
+        def close(ignore_changes = false)
+          nil
+        end
+
         def close_active
         end
         def commit_operation
@@ -78,6 +86,10 @@ module Sketchup
         end
 
         def export
+        end
+
+        # Finds and returns entities by their entityID or GUID. 
+        def find_entity_by_id(id_list_or_array)
         end
 
         # @see set_attribute

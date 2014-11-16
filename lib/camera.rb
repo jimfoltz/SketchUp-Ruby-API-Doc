@@ -5,6 +5,12 @@ module Sketchup
         end
         def aspect_ratio=
         end
+
+        # @since SketchUp 2015
+        # @return [Geom::Point3d]
+        def center_2d
+        end
+
         def description
         end
         def description=
@@ -21,10 +27,20 @@ module Sketchup
         end
         def fov=
         end
+
+        # @since SketchUp 2015
+        def fov_is_height?
+        end
+
         def height
         end
         def height=
         end
+
+        # @since SketchUp 2015
+        def is_2d?
+        end
+
         def image_width
         end
         def image_width=
@@ -35,6 +51,11 @@ module Sketchup
         end
         def perspective?
         end
+
+        # @since SketchUp 2015
+        def scale_2d
+        end
+
         def set
         end
         def target
