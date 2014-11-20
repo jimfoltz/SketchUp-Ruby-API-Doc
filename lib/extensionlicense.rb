@@ -14,7 +14,7 @@ module Sketchup
       def licensed?
       end
 
-      # @return state a constantdefined in the Licensing namespace
+      # @return state a constant defined in the Licensing namespace
       #
       #   * {Sketchup::Licensing::LICENSED}
       #   * {Sketchup::Licensing::EXPIRED}
@@ -22,6 +22,7 @@ module Sketchup
       #   * {Sketchup::Licensing::TRIAL_EXPIRED}
       #   * {Sketchup::Licensing::NOT_LICENSED}
       def state
+        state = Sketchup::Licensing::NOT_LICENSED
         return state
       end
     end

@@ -14,7 +14,10 @@ class Array
 
   # Returns the distance between this Point3d and the given Point3d.
   #
-  # @param [Sketchup::Point3d]
+  # @overload distance(point)
+  #   @param [Geom::Point3d] point
+  # @overload distance(array)
+  #   @param [Array] array an array
   #
   # @example
   #   [0, 0].distance([1, 1])
@@ -37,11 +40,13 @@ class Array
   # @example
   #   [0, 0, 1].dot([0, 1, 0])
   #   ==> 0.0
-  # @params [other] Array
   #
-  # @return [Numeric]
-  def dot(other)
+  # @param [Vector3d] vector
+  #
+  # @return [Float] the dot product
+  def dot(vector)
   end
+
   def normalize
   end
   def normalize!
