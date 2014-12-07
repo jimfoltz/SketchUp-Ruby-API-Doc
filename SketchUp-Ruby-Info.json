@@ -1,49 +1,50 @@
 {
-   "13.0.4812":{
-      "ruby_info":{
-         "RUBY_VERSION":"1.8.6",
-         "RUBY_RELEASE_DATE":"2008-08-11",
-         "RUBY_PATCHLEVEL":"287",
-         "RUBY_PLATFORM":"i386-mswin32"
-      }
-   },
-   "14.1.1282":{
-      "ruby_info":{
-         "RUBY_REVISION":"0",
-         "RUBY_DESCRIPTION":"ruby 2.0.0p247 (2013-06-27) [i386-mingw32]",
-         "RUBY_VERSION":"2.0.0",
-         "RUBY_RELEASE_DATE":"2013-06-27",
-         "RUBY_PATCHLEVEL":"247",
-         "RUBY_COPYRIGHT":"ruby - Copyright (C) 1993-2013 Yukihiro Matsumoto",
-         "RUBY_PLATFORM":"i386-mingw32",
-         "RUBY_ENGINE":"ruby"
-      }
-   },
-   "15.1.106":{
-      "ruby_info":{
-         "RUBY_VERSION":"2.0.0",
-         "RUBY_RELEASE_DATE":"2013-06-27",
-         "RUBY_PLATFORM":"x64-mingw32",
-         "RUBY_PATCHLEVEL":"247",
-         "RUBY_REVISION":"0",
-         "RUBY_DESCRIPTION":"ruby 2.0.0p247 (2013-06-27) [x64-mingw32]",
-         "RUBY_COPYRIGHT":"ruby - Copyright (C) 1993-2013 Yukihiro Matsumoto",
-         "RUBY_ENGINE":"ruby"
-      }
-   },
-   "7.1.6860":{
-      "ruby_info":{
-         "RUBY_VERSION":"1.8.0",
-         "RUBY_RELEASE_DATE":"2003-08-04",
-         "RUBY_PLATFORM":"i386-mswin32"
-      }
-   },
-   "8.0.16846":{
-      "ruby_info":{
-         "RUBY_VERSION":"1.8.6",
-         "RUBY_RELEASE_DATE":"2008-08-11",
-         "RUBY_PATCHLEVEL":"287",
-         "RUBY_PLATFORM":"i386-mswin32"
-      }
-   }
+  "15.1.106": {
+    "ruby_info": {
+      "RUBY_VERSION": "2.0.0",
+      "RUBY_RELEASE_DATE": "2013-06-27",
+      "RUBY_PLATFORM": "x64-mingw32",
+      "RUBY_PATCHLEVEL": "247",
+      "RUBY_REVISION": "0",
+      "RUBY_DESCRIPTION": "ruby 2.0.0p247 (2013-06-27) [x64-mingw32]",
+      "RUBY_COPYRIGHT": "ruby - Copyright (C) 1993-2013 Yukihiro Matsumoto",
+      "RUBY_ENGINE": "ruby"
+    }
+  },
+  "14.1.1282": {
+    "ruby_info": {
+      "RUBY_VERSION": "2.0.0",
+      "RUBY_RELEASE_DATE": "2013-06-27",
+      "RUBY_PLATFORM": "i386-mingw32",
+      "RUBY_PATCHLEVEL": "247",
+      "RUBY_REVISION": "0",
+      "RUBY_DESCRIPTION": "ruby 2.0.0p247 (2013-06-27) [i386-mingw32]",
+      "RUBY_COPYRIGHT": "ruby - Copyright (C) 1993-2013 Yukihiro Matsumoto",
+      "RUBY_ENGINE": "ruby"
+    }
+  },
+  "13.0.4812": {
+    "ruby_info": {
+      "RUBY_VERSION": "1.8.6",
+      "RUBY_RELEASE_DATE": "2008-08-11",
+      "RUBY_PATCHLEVEL": "287",
+      "RUBY_PLATFORM": "i386-mswin32"
+    }
+  },
+  "8.0.16846": {
+    "ruby_info": {
+      "RUBY_VERSION": "1.8.6",
+      "RUBY_RELEASE_DATE": "2008-08-11",
+      "RUBY_PATCHLEVEL": "287",
+      "RUBY_PLATFORM": "i386-mswin32"
+    }
+  },
+  "7.1.6860": {
+    "ruby_info": {
+      "RUBY_VERSION": "1.8.0",
+      "RUBY_RELEASE_DATE": "2003-08-04",
+      "RUBY_PLATFORM": "i386-mswin32"
+    }
+  }
 }
+
