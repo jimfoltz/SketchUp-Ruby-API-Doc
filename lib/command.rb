@@ -1,18 +1,51 @@
 module UI
+    # @since SketchUp 6
     class Command
-        def large_icon=
+
+        # @since SketchUp 8 M1
+        def large_icon
         end
-        def menu_text=
+
+        # @since SketchUp 6
+        def large_icon=(filename)
         end
-        def new
+        def menu_text
         end
-        def set_validation_proc
+
+        # @since SketchUp 6
+        def menu_text=(string)
         end
-        def small_icon=
+
+        # @since SketchUp 6
+        def new(menu_text, &block)
         end
-        def status_bar_text=
+
+        # @since SketchUp 6
+        def set_validation_proc(&block)
         end
-        def tooltip=
+
+        # @since SketchUp 8 M1
+        def small_icon
+        end
+
+        # @since SketchUp 6
+        def small_icon=(filename)
+        end
+
+        # @since SketchUp 8 M1
+        def status_bar_text
+        end
+
+        # @since SketchUp 6
+        def status_bar_text=(string)
+        end
+
+        # @since SketchUp 8 M1
+        def tooltip
+        end
+
+        # @since SketchUp 6
+        def tooltip=(string)
         end
     end
 end
