@@ -1,9 +1,9 @@
 # Geometry
 
-ORIGIN = Geom::Point3d.new(0,  0,  0)
-X_AXIS = Geom::Vector3d.new(1, 0, 0)
-Y_AXIS = Geom::Vector3d.new(0, 1, 0)
-Z_AXIS = Geom::Vector3d.new(0, 0, 1)
+ORIGIN   = Geom::Point3d.new(0,  0,  0)
+X_AXIS   = Geom::Vector3d.new(1, 0, 0)
+Y_AXIS   = Geom::Vector3d.new(0, 1, 0)
+Z_AXIS   = Geom::Vector3d.new(0, 0, 1)
 IDENTITY = Geom::Transformation.new
 
 
@@ -17,40 +17,40 @@ SB_VCB_VALUE = 2
 # Messagebox Types
 
 MB_ABORTRETRYIGNORE = 2
-MB_MULTILINE = 16
-MB_OK = 0
-MB_OKCANCEL = 1
-MB_RETRYCANCEL = 5
-MB_YESNO = 4
-MB_YESNOCANCEL = 3
+MB_MULTILINE        = 16
+MB_OK               = 0
+MB_OKCANCEL         = 1
+MB_RETRYCANCEL      = 5
+MB_YESNO            = 4
+MB_YESNOCANCEL      = 3
 
 
 # Messagebox Return Values
 
-IDABORT = 3
+IDABORT  = 3
 IDCANCEL = 2
 IDIGNORE = 5
-IDNO = 7
-IDOK = 1
-IDRETRY = 4
-IDYES = 6
+IDNO     = 7
+IDOK     = 1
+IDRETRY  = 4
+IDYES    = 6
 
 
 # Toolbar Visibility States
 
-TB_HIDDEN = 0
+TB_HIDDEN      = 0
 TB_NEVER_SHOWN = -1
-TB_VISIBLE = 1
+TB_VISIBLE     = 1
 
 
 # Tool Key Modifiers
 
-ALT_MODIFIER_KEY = 18
-ALT_MODIFIER_MASK = 32
-CONSTRAIN_MODIFIER_KEY = 16
+ALT_MODIFIER_KEY        = 18
+ALT_MODIFIER_MASK       = 32
+CONSTRAIN_MODIFIER_KEY  = 16
 CONSTRAIN_MODIFIER_MASK = 4
-COPY_MODIFIER_KEY = 17
-COPY_MODIFIER_MASK = 8
+COPY_MODIFIER_KEY       = 17
+COPY_MODIFIER_MASK      = 8
 
 
 # Tool Mouse and Key
