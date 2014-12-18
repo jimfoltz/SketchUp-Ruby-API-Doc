@@ -8,7 +8,7 @@ module UI
     end
     alias_method :size, :length
 
-    def add_item
+    def add_item(command)
     end
     def add_separator
     end
@@ -16,7 +16,7 @@ module UI
     end
     def hide
     end
-    def new
+    def new(name)
     end
     def restore
     end
