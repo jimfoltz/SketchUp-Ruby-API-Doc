@@ -7,8 +7,11 @@ class BoundingBox
     # @return [Geom::Point3d] the center point of the BoundingBox
     def center
     end
+    
+    # @return [Geom::BoundingBox] the bounding box which was clearer
     def clear
     end
+
     def contains?
     end
 

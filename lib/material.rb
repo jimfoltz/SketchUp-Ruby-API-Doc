@@ -11,8 +11,11 @@ class Material < Entity
     end
 
     # @return [Sketchup::Color] the Color of the Material
+    # @note The alpha value is always 255. 
+    #   If you want the alpha, use {Material#alpha}
     def color
     end
+
     def color=
     end
 
