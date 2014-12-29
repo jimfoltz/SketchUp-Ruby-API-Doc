@@ -25,34 +25,29 @@
 
 class Animation
 
-  # The nextFrame method is invoked by SketchUp to tell the animation to display its next frame.
+  # Invoked by SketchUp to tell the animation to display its next frame.
   #
   # @param [Sketchup::View] view
   #
   # @return [Boolean] true if you want the animation to continue on to the next frame, false if you want the animation to stop after this frame.
-
   def nextFrame(view)
-    # return false
   end
 
-  # The pause method is invoked by SketchUp when the animation is paused. 
+  # Invoked by SketchUp when the animation is paused. 
   #
   # @return [nil]
   def pause
-    return nil
   end
 
-  # The resume method is invoked by SketchUp when the animation is resumed after being paused. 
+  # Invoked by SketchUp when the animation is resumed after being paused. 
   #
   # @return [nil]
   def resume
-    return nil
   end
 
-  # The stop method is invoked by SketchUp when the animation is stopped. 
+  # Invoked by SketchUp when the animation is stopped. 
   #
   # @return [nil]
   def stop
-    return nil
   end
 end
