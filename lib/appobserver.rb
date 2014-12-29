@@ -46,9 +46,10 @@ class Sketchup::AppObserver
   #     return true
   #   end
   #
-  # @return [Boolean] Return true to receive {#onNewModel} and {#onOpenModel} calls
-  # for startup models. Return false or simply not implement the method in order
-  # to not receive these calls (which was the behaviour prior to SketchUp 2014).
+  # @return [Boolean] Return true to receive {#onNewModel} and {#onOpenModel}
+  #   calls for startup models. Return false or simply not implement the method
+  #   in order to not receive these calls (which was the behaviour prior to
+  #   SketchUp 2014).
   #
   # @since SketchUp 2014
   def expectsStartupModelNotifications
