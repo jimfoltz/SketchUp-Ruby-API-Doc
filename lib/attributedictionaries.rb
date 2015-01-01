@@ -50,8 +50,8 @@ module Sketchup
     #
     # @param [String] key The name of the attribute dictionary.
     #
-    # @return [AttributeDictionary, nil] An attribute dictionary if it exits or
-    #   <tt>nil</tt> if none with the specified name exist.
+    # @return [AttributeDictionary] An attribute dictionary if it exits or +nil+
+    #   if none with the specified key exist.
     def [](key)
     end
 
@@ -66,7 +66,7 @@ module Sketchup
     # @param [AttributeDictionary, String] key_or_dict The name of the attribute
     #   dictionary to delete or the object itself.
     #
-    # @return [AttributeDictionaries] the modified attribute dictionaries.
+    # @return [AttributeDictionaries] The modified attribute dictionaries.
     def delete(key_or_dict)
     end
 

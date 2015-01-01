@@ -30,8 +30,8 @@ module Sketchup
     #
     # @param [String] key The name of the attribute.
     #
-    # @return [Object, nil] the attribute stored under the key, or <tt>nil</tt>
-	#   if not found.
+    # @return [Object] The attribute stored under the given key or +nil+ if
+    #   there is no attribute with the given key.
     def [](key)
     end
 
@@ -50,8 +50,8 @@ module Sketchup
     # @param [String] key The name of the attribute.
     # @param [Object] value The value of the attribute.
     #
-    # @return [Object, nil] the assigned object if successful, or <tt>nil</tt>
-	#   if unsuccessful.
+    # @return [Object] The newly assigned object if successful or +nil+ if
+    #   unsuccessful.
     def []=(key, value)
     end
 
@@ -70,8 +70,8 @@ module Sketchup
     #
     # @param [String] key The key to be deleted.
     #
-    # @return [Object, nil] The value of the key, or nil if the specified key
-    #   does not exist.
+    # @return [Object] The value of the key or +nil+ if the specified key
+    #   doesn't exist.
     def delete_key(key)
     end
 

@@ -46,7 +46,7 @@ class Array
   #
   # @param [Geom::Vector3d, Array<Numeric>] vector
   #
-  # @return [Vector3d] computed cross product
+  # @return [Vector3d] Computed cross product.
   def cross(vector)
   end
 
@@ -64,7 +64,7 @@ class Array
   #
   # @param [Geom::Point3d, Array<Numeric>] point
   #
-  # @return [Length] computed distance
+  # @return [Length] Computed distance.
   def distance(point)
   end
 
@@ -82,7 +82,7 @@ class Array
   #   An array with a {Geom::Point3d} object and a {Geom::Vector3d} object or an
   #   array with two {Geom::Point3d} objects representing the line.
   #
-  # @return [Length] computed distance
+  # @return [Length] Computed distance.
   def distance_to_line(line)
   end
 
@@ -99,7 +99,7 @@ class Array
   #   {Geom::Point3d} object and a {Geom::Vector3d} object representing the
   #   plane.
   #
-  # @return [Length] computed distance
+  # @return [Length] Computed distance.
   def distance_to_plane(plane)
   end
 
@@ -116,7 +116,7 @@ class Array
   #
   # @param [Vector3d] vector
   #
-  # @return [Float] computed dot product
+  # @return [Float] Computed dot product.
   def dot(vector)
   end
 
@@ -128,7 +128,7 @@ class Array
   #   # This will return a new Array
   #   normal_vector = array.normalize
   #
-  # @return [Array] an array representing the normalized vector
+  # @return [Array] A new array representing the normalized vector.
   def normalize
   end
 
@@ -139,7 +139,7 @@ class Array
   #   # This will modify the 'array' in place.
   #   normal_vector = array.normalize!
   #
-  # @return [Array] an array representing the normalized vector.
+  # @return [Array] The current array with the normalized vector.
   def normalize!
   end
 
@@ -154,7 +154,7 @@ class Array
   #
   # @param [Geom::Vector3d, Array<Numeric>] vector
   #
-  # @return [Array] the newly offset array
+  # @return [Array] The newly offset array.
   def offset(vector)
   end
 
@@ -168,7 +168,7 @@ class Array
   #
   # @param [Geom::Vector3d, Array<Numeric>] vector
   #
-  # @return [Array] the current offset array
+  # @return [Array] The current offset array.
   def offset!(vector)
   end
 
@@ -185,8 +185,8 @@ class Array
   #   An array with a {Geom::Point3d} object and a {Geom::Vector3d} object or an
   #   array with two {Geom::Point3d} objects representing the line.
   #
-  # @return [Boolean] true if the point is on the line, false if the point is
-  #   not on the line.
+  # @return [Boolean] +true+ if the point is on the line or +false+ if the point
+  #   is not on the line.
   def on_line?(line)
   end
 
@@ -203,8 +203,8 @@ class Array
   #   {Geom::Point3d} object and a {Geom::Vector3d} object representing the
   #   plane.
   #
-  # @return [Boolean] true if the point is on the plane, false if the point is
-  #   not on the plane.
+  # @return [Boolean] +true+ if the point is on the plane or +false+ if the
+  #   point is not on the plane.
   def on_plane?(plane)
   end
 
@@ -273,7 +273,7 @@ class Array
   #
   # @param [Geom::Transformation] transformation
   #
-  # @return [Array] The newly transformed point.
+  # @return [Array] The current transformed point.
   def transform!(transformation)
   end
 
@@ -318,7 +318,7 @@ class Array
   #   # This will initialize the x value as a Fixnum
   #   array.x = 5
   #
-  # @return [Numeric] The new X coordinate or the newly first element.
+  # @return [Object] The newly assigned value.
   def x=
   end
 
@@ -349,7 +349,7 @@ class Array
   #   # This will initialize the y value as a Fixnum
   #   array.y = 5
   #
-  # @return [Numeric] The new Y coordinate or the newly second element.
+  # @return [Object] The newly assigned value.
   def y=
   end
 
@@ -380,7 +380,7 @@ class Array
   #   # This will initialize the z value as a Fixnum
   #   array.z = 5
   #
-  # @return [Numeric] The new Z coordinate or the newly third element.
+  # @return [Object] The newly assigned value.
   def z=
   end
 
