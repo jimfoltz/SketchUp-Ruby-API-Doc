@@ -52,10 +52,10 @@ module Sketchup
     #     return true
     #   end
     #
-    # @return [Boolean] Return true to receive {#onNewModel} and {#onOpenModel}
-    #   calls for startup models. Return false or simply not implement the
-    #   method in order to not receive these calls (which was the behaviour
-    #   prior to SketchUp 2014).
+    # @return [Boolean] Return +true+ to receive {#onNewModel} and
+    #   {#onOpenModel} calls for startup models. Return +false+ or simply not
+    #   implement the method in order to not receive these calls (which was the
+    #   behaviour prior to SketchUp 2014).
     #
     # @since SketchUp 2014
     def expectsStartupModelNotifications
@@ -87,8 +87,6 @@ module Sketchup
     # @param [Sketchup::Model] model The active model object.
     #
     # @return [void]
-    #
-    # @since SketchUp 6.0
     def onNewModel(model)
     end
 
@@ -108,8 +106,6 @@ module Sketchup
     # @param [Sketchup::Model] model The active model object.
     #
     # @return [void]
-    #
-    # @since SketchUp 6.0
     def onOpenModel(model)
     end
 
@@ -122,8 +118,6 @@ module Sketchup
     #   end
     #
     # @return [void]
-    #
-    # @since SketchUp 6.0
     def onQuit
     end
 

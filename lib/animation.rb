@@ -47,10 +47,8 @@ class Animation
   #
   # @param [Sketchup::View] view The view for the animation.
   #
-  # @return [Boolean] true if you want the animation to continue on to the next
-  #   frame, false if you want the animation to stop after this frame.
-  #
-  # @since SketchUp 6.0
+  # @return [Boolean] +true+ if you want the animation to continue on to the
+  #   next frame or +false+ if you want the animation to stop after this frame.
   def nextFrame(view)
   end
 
@@ -71,8 +69,6 @@ class Animation
   #   end
   #
   # @return [void]
-  #
-  # @since SketchUp 6.0
   def pause
   end
 
@@ -93,8 +89,6 @@ class Animation
   #   end
   #
   # @return [void]
-  #
-  # @since SketchUp 6.0
   def resume
   end
 
@@ -114,8 +108,6 @@ class Animation
   #   end
   #
   # @return [void]
-  #
-  # @since SketchUp 6.0
   def stop
   end
 
