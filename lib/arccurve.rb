@@ -44,7 +44,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   point = arc_curve.center
     #
-    # @return [Geom::Point3d] center of the arc if successful.
+    # @return [Geom::Point3d] Center of the arc if successful.
     def center
     end
 
@@ -64,7 +64,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   end_angle = arc_curve.end_angle
     #
-    # @return [Numeric] the angle of the end of the arc (in radians) if
+    # @return [Numeric] The angle of the end of the arc (in radians) if
     #   successful.
     def end_angle
     end
@@ -83,7 +83,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   v = arc_curve.normal
     #
-    # @return [Geom::Vector3d] the normal of the arc if successful.
+    # @return [Geom::Vector3d] The normal of the arc if successful.
     def normal
     end
 
@@ -122,7 +122,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   radius = arc_curve.radius
     #
-    # @return [Numeric] the radius of the arc if successful.
+    # @return [Numeric] The radius of the arc if successful.
     def radius
     end
 
@@ -143,7 +143,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   start_angle = arc_curve.start_angle
     #
-    # @return [Numeric] the angle of the start of the arc (in radians) if
+    # @return [Numeric] The angle of the start of the arc (in radians) if
     #   successful.
     def start_angle
     end
@@ -165,7 +165,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   v = arc_curve.xaxis
     #
-    # @return [Geom::Vector3d] the xaxis of the arc's coordinate system if
+    # @return [Geom::Vector3d] The xaxis of the arc's coordinate system if
     #   successful.
     def xaxis
     end
@@ -187,7 +187,7 @@ module Sketchup
     #   arc_curve = edge.curve
     #   v = arc_curve.yaxis
     #
-    # @return [Geom::Vector3d] the yaxis of the arc's coordinate system if
+    # @return [Geom::Vector3d] The yaxis of the arc's coordinate system if
     #   successful.
     def yaxis
     end
