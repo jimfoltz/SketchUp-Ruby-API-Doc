@@ -1,5 +1,5 @@
 {
-  "15.1.106": {
+  "15.2.560": {
     "ruby_info": {
       "RUBY_REVISION": "0",
       "RUBY_DESCRIPTION": "ruby 2.0.0p247 (2013-06-27) [x64-mingw32]",
@@ -11,7 +11,7 @@
       "RUBY_ENGINE": "ruby"
     }
   },
-  "15.2.560": {
+  "15.1.106": {
     "ruby_info": {
       "RUBY_REVISION": "0",
       "RUBY_DESCRIPTION": "ruby 2.0.0p247 (2013-06-27) [x64-mingw32]",

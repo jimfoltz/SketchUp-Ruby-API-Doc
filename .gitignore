@@ -3,3 +3,4 @@ doc
 *.dot
 mockup.rb
 mockup_test.rb
+SketchUp-Ruby-Info.json
