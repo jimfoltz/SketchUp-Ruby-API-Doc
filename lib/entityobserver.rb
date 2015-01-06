@@ -1,5 +1,5 @@
 module Sketchup
-    # Attched to an {Entity} using the {Entity#add_observer} method
+    # Attached to an {Entity} using the {Entity#add_observer} method
     # @abstract
     #   This is an abstract class - you need to over-write
     #   the methods in your code.
