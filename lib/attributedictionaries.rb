@@ -18,7 +18,7 @@ module Sketchup
   # attribute is added to the entity:
   #   g.set_attribute("Test", "Yo", "Hello")
   #   g.attribute_dictionaries # => #<Sketchup::Group:0x00000007569bc0>>
-  # When irritating through entity attribute dictionaries, be sure to verify that
+  # When iterating through entity attribute dictionaries, be sure to verify that
   # <tt>Sketchup::Entity.#attribute_dictionaries</tt> is not <tt>nil</tt>.
   #
   # @example

@@ -18,7 +18,7 @@ class Vector3d
     def <
     end
 
-    # Dtermines if vectors are equal within tolerance.
+    # Determines if vectors are equal within tolerance.
     def ==
     end
 
