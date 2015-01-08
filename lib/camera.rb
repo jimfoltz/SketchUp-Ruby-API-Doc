@@ -9,8 +9,8 @@ module Sketchup
     end
 
     # Set the camera aspect ratio
-    # @param [Float] ascpect_ratio
-    # @return [Float] ascpect ratio
+    # @param [Float] aspect_ratio
+    # @return [Float] aspect ratio
     def aspect_ratio=(aspect_ratio)
       @aspect_ratio = aspect_ratio
     end
@@ -20,12 +20,12 @@ module Sketchup
     def center_2d
     end
 
-    # @return [String] A desription of the camera
+    # @return [String] A description of the camera
     def description
       return @description
     end
 
-    # @param [String] text A Desription of the camera
+    # @param [String] text A desription of the camera
     # @return [void]
     # @example
     #   camera = Sketchup::Camera.new
