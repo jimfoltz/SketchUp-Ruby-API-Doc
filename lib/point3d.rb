@@ -1,105 +1,159 @@
 module Geom
   class Point3d
 
-    # @private
-    def initialize(pt = nil)
-      @x = pt[0]
-      @y = pt[1]
-      @z = pt[2]
+    # @overload initialize(x = 0.0, y = 0.0, z = 0.0)
+    #   @param [Numeric] x
+    #   @param [Numeric] y
+    #   @param [Numeric] z
+    # @overload initialize(point)
+    #   @param [Geom::Point3d] point
+    # @overload initialize(point)
+    #   @param [Array] array
+    def initialize(*args)
     end
 
-    # Returns a new Point3d which is offset from the receiver by the given vector.
-    # @example
-    #   pt = Geom::Point3d.new(1, 2, 3)
-    #   pt2 = pt + [1, 1, 1]
-    #   ==> Point3d(2, 3, 4)
-    # @param [Vector3d] vector a Vector3d or Array used to offset the point
-    # @return [Point3d]
-    # @since SketchUp 6.0
+    # @param [Geom::Vector3d] vector
+    # @return [Geom::Point3d]
     def +(vector)
     end
 
-    # Returns a Vector3d from 
-    # @param [Point3d] point 
+    # @param [Geom::Point3d] point
     # @return [Vector3d]
     def -(point)
     end
 
-    # Determine which point is closer to the origin
-    # @param [ Geom::Point3d] point2
-    # @return [Boolean] true if point2 is closer to the ORIGIN
-    # @example
-    #   pt1 = Geom::Point3d.new(10, 10, 10)
-    #   pt2 = Geom::Point3d.new(20, 20, 20)
-    #   pt1 < pt2 # ==> true
-    def < (point2)
+    # @param [Geom::Point3d, Array] point
+    # @return [Boolean] true if point is closer to the ORIGIN
+    def < (point)
     end
 
-    # Compare {Point3d}s using SketchUp tolerance.
-    # @overload ==(point2)
-    #   @params [Geom::Point3d]
-    # @overload ==(array)
-    #   @param [Array]
+    # @param [Geom::Point3d, Array] point
     # @return [Boolean]
-    def ==(point2)
+    def ==(point)
     end
 
+    # @param [Integer] index
+    # @return [Length]
     def []
     end
-    def []=
+
+    # @param [Integer] index
+    # @param [Length] value
+    # @return [Length]
+    def []=(index, value)
     end
+
+    # @return [Geom::Point3d]
     def clone
     end
-    def distance
+
+    # @param [Geom::Point3d, Array] point
+    # @return [Length]
+    def distance(point)
     end
-    def distance_to_line
+
+    # @param [Array] line
+    # @return [Length]
+    def distance_to_line(line)
     end
-    def distance_to_plane
+
+    # @param [Array] plane
+    # @return [Length]
+    def distance_to_plane(plane)
     end
-    def inspect
+
+    # @param [Float] weight1
+    # @param [Geom::Point3d, Array] point1
+    # @param [Float] weight2
+    # @param [Geom::Point3d, Array] point2
+    # @return [Geom::Point3d]
+    def linear_combination(weight1, point1, weight2, point2)
     end
-    def linear_combination
+
+    # @param [Geom::Vector3d, Array] vector
+    # @param [Length] length
+    # @return [Geom::Point3d]
+    def offset(vector, length = nil)
     end
-    def new
+
+    # @param [Geom::Vector3d, Array] vector
+    # @param [Length] length
+    # @return [Geom::Point3d]
+    def offset!(vector, length = nil)
     end
-    def offset
+
+    # @param [Array] line
+    # @return [Boolean]
+    def on_line?(line)
     end
-    def offset!
+
+    # @param [Array] plane
+    # @return [Boolean]
+    def on_plane?(plane)
     end
-    def on_line?
+
+    # @param [Array] line
+    # @return [Geom::Point3d]
+    def project_to_line(line)
     end
-    def on_plane?
+
+    # @param [Array] plane
+    # @return [Geom::Point3d]
+    def project_to_plane(plane)
     end
-    def project_to_line
+
+    # @param [Length] x
+    # @param [Length] y
+    # @param [Length] z
+    # @return [Geom::Point3d]
+    def set!(x, y, z)
     end
-    def project_to_plane
-    end
-    def set!
-    end
+
+    # @return [Array(Float, Float, Float)]
     def to_a
     end
 
-    # @return String representation of the Point3d in the current Model units.
-    def to_s
+    # @param [Geom::Transformation] transformation
+    # @return [Geom::Point3d]
+    def transform(transformation)
     end
 
-    def transform
+    # @param [Geom::Transformation] transformation
+    # @return [Geom::Point3d]
+    def transform!(transformation)
     end
-    def transform!
+
+    # @param [Geom::Point3d] point
+    # @return [Geom::Vector3d]
+    def vector_to(point)
     end
-    def vector_to
-    end
+
+    # @return [Length]
     def x
     end
-    def x=
+
+    # @param [Length] value
+    # @return [Length]
+    def x=(value)
     end
+
+    # @return [Length]
     def y
     end
-    def y=
+
+    # @param [Length] value
+    # @return [Length]
+    def y=(value)
     end
+
+    # @return [Length]
     def z
     end
-    def z=
+
+    # @param [Length] value
+    # @return [Length]
+    def z=(value)
     end
+
   end
 end
