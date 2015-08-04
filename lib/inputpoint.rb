@@ -4,7 +4,7 @@ class InputPoint
     end
     def clear
     end
-    def copy!
+    def copy!(input_point)
     end
     def degrees_of_freedom
     end
@@ -12,15 +12,15 @@ class InputPoint
     end
     def display?
     end
-    def draw
+    def draw(view)
     end
     def edge
     end
     def face
     end
-    def new
+    def new(point_or_vertex)
     end
-    def pick
+    def pick(view, x, y, input_point = nil)
     end
     def position
     end

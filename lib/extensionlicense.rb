@@ -8,7 +8,7 @@ module Sketchup
       end
       
       # @return [String] error description
-      def error_descrption
+      def error_description
       end
 
       def licensed?

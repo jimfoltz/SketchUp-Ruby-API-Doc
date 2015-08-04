@@ -2,17 +2,17 @@ module Sketchup
 class Color
     def alpha
     end
-    def alpha=
+    def alpha=(value)
     end
     def blend
     end
     def blue
     end
-    def blue=
+    def blue=(value)
     end
     def green
     end
-    def green=
+    def green=(value)
     end
     def names
     end
@@ -20,7 +20,7 @@ class Color
     end
     def red
     end
-    def red=
+    def red=(value)
     end
     def to_a
     end

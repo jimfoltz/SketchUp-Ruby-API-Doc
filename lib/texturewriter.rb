@@ -8,9 +8,9 @@ class TextureWriter
     end
     def length
     end
-    def load
+    def load(entity, front = false)
     end
-    def write
+    def write(entity, filename, front = false)
     end
     def write_all
     end
