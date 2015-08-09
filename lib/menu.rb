@@ -22,9 +22,9 @@ module Sketchup
 
         def add_separator
         end
-        def add_submenu
+        def add_submenu(menu_name)
         end
-        def set_validation_proc
+        def set_validation_proc(item, &block)
         end
     end
 end

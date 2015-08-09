@@ -1,6 +1,6 @@
 module Geom
 class Vector3d
-    def %
+    def %(vector)
     end
     
     # Computes the cross product between 2 Vectors.
@@ -9,17 +9,17 @@ class Vector3d
     end
 
     # Vector Addition
-    def +
+    def +(vector)
     end
 
     # Vector subtraction
-    def -
+    def -(vector)
     end
-    def <
+    def <(vector)
     end
 
     # Determines if vectors are equal within tolerance.
-    def ==
+    def ==(vector)
     end
 
     # Element Reference
@@ -28,9 +28,9 @@ class Vector3d
     def []
     end
 
-    def []=
+    def []=(value)
     end
-    def angle_between
+    def angle_between(vector)
     end
     def axes
     end
@@ -41,42 +41,42 @@ class Vector3d
     end
 
     # Compute the dot product between another vector.
-    def dot
+    def dot(vector)
     end
     def inspect
     end
 
     def length
     end
-    def length=
+    def length=(value)
     end
     def linear_combination
     end
-    def new
+    def new(*args)
     end
     def normalize
     end
     def normalize!
     end
-    def parallel?
+    def parallel?(vector)
     end
-    def perpendicular?
+    def perpendicular?(vector)
     end
     def reverse
     end
     def reverse!
     end
-    def samedirection?
+    def samedirection?(vector)
     end
-    def set!
+    def set!(*args)
     end
     def to_a
     end
     def to_s
     end
-    def transform
+    def transform(transformation)
     end
-    def transform!
+    def transform!(transformation)
     end
     def unitvector?
     end
@@ -84,15 +84,15 @@ class Vector3d
     end
     def x
     end
-    def x=
+    def x=(value)
     end
     def y
     end
-    def y=
+    def y=(value)
     end
     def z
     end
-    def z=
+    def z=(value)
     end
 end
 end # module Geom

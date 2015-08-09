@@ -7,9 +7,9 @@ module UI
     def self.beep
     end
 
-    def self.create_cursor
+    def self.create_cursor(filename, hot_x, hot_y)
     end
-    def self.inputbox
+    def self.inputbox(*args)
     end
     def self.inspector_names
     end
@@ -40,14 +40,14 @@ module UI
     def self.menu(menu_name = nil)
     end
 
-    def self.messagebox
+    def self.messagebox(message, type = IDOK)
     end
     
     # Display a list of the names of the available tabs in the Model Info Window.
     def self.model_info_pages
     end
 
-    def self.openURL
+    def self.openURL(url)
     end
 
     # File selection dialog.
@@ -57,10 +57,10 @@ module UI
     #  chosen_image = UI.openpanel("Open Image File", "c:/", "Image Files|*.jpg;*.png;||")
     #  chosen_image = UI.openpanel("Open CAD File", "c:/", "DXF|*.dxf|DWG|*.dwg||")
     # 
-    def self.openpanel
+    def self.openpanel(title, path, file_filter)
     end
 
-    def self.play_sound
+    def self.play_sound(filename)
     end
     
     # @see show_preferences
@@ -71,7 +71,7 @@ module UI
     end
 
     # File save dialog
-    def self.savepanel
+    def self.savepanel(title, path, file_filter)
     end
 
     # @since 2015
@@ -84,24 +84,24 @@ module UI
     def self.select_directory(opts = {})
     end
 
-    def self.set_cursor
+    def self.set_cursor(cursor_id)
     end
-    def self.set_toolbar_visible
+    def self.set_toolbar_visible(name, visible)
     end
-    def self.show_inspector
+    def self.show_inspector(name)
     end
     def self.show_model_info(page)
     end
     def self.show_preferences(page)
     end
-    def self.start_timer
+    def self.start_timer(interval, repeat = false)
     end
-    def self.stop_timer
+    def self.stop_timer(timer_id)
     end
-    def self.toolbar
+    def self.toolbar(name)
     end
     def self.toolbar_names
     end
-    def self.toolbar_visible?
+    def self.toolbar_visible?(name)
     end
 end

@@ -74,7 +74,7 @@ module Sketchup
     # @param [Boolean] value
     #
     # @return [Boolean]
-    def soft=
+    def soft=(value)
     end
 
     # @return [Boolean]
@@ -84,7 +84,7 @@ module Sketchup
     # @param [Geom::Point3d] point
     #
     # @param [Sketchup::Edge, Nil]
-    def split
+    def split(point)
     end
 
     # @return [Sketchup::Vertex]

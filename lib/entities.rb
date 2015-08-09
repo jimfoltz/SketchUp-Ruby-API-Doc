@@ -36,19 +36,19 @@ module Sketchup
     end
 
     # @since SketchUp 2014
-    def active_section_plane=
+    def active_section_plane=(section_plane)
     end
 
     # @since SketchUp 2014
-    def add_dimension_linear
+    def add_dimension_linear(dim_start, dim_end, offset_vector)
     end
 
     # @since SketchUp 2014
-    def add_dimension_radial
+    def add_dimension_radial(arc_curve, leader_break_point)
     end
 
     # @since SketchUp 2014
-    def add_section_plane
+    def add_section_plane(*args)
     end
 
     # @since SketchUp 2014
@@ -57,24 +57,24 @@ module Sketchup
     def size
     end
 
-    def add_3d_text
+    def add_3d_text(string, alignment, font, bold = false, italic = false,
+                    letter_height = nil, tolerance = 0.0, z = nil,
+                    filled = true, extrusion = 0.0)
     end
     def add_arc(center, xaxis, normal, radius, start_angle, end_angle, segments = 12)
-      arc = SketchUp::ArcCurve.new(center, xaxis, normal, radius, start_angele, end_angle, segments)
-      return(arc)
     end
-    def add_circle
+    def add_circle(center, normal, radius, segments = 24)
     end
-    def add_cline
+    def add_cline(line_Start, line_end, stipple = '')
     end
 
-    def add_cpoint(pt)
+    def add_cpoint(point)
       pt = Sketchup::ConstructionPoint.new(pt)
       @list.push(pt)
       return(pt)
     end
 
-    def add_curve
+    def add_curve(*args)
     end
 
     # Accepts list of Point3ds or Array of Point3ds
@@ -93,15 +93,15 @@ module Sketchup
       @list.concat(edges)
       return(edges)
     end
-    def add_face
+    def add_face(*args)
     end
-    def add_faces_from_mesh
+    def add_faces_from_mesh(mesh)
     end
-    def add_group
+    def add_group(*args)
     end
-    def add_image
+    def add_image(filename, position, width, height = nil)
     end
-    def add_instance
+    def add_instance(definition, transformation)
     end
 
     # Adds an Edge to the Entities collection
@@ -116,18 +116,16 @@ module Sketchup
     #
     # @return [Sketchup::Edge] ege
     #
-    def add_line(pt1, pt2)
-      edges = add_edges(pt1, pt2)
-      return(edges.first)
+    def add_line(*args)
     end
 
-    def add_ngon
+    def add_ngon(center, normal, radius, segments)
     end
-    def add_observer
+    def add_observer(observer)
     end
-    def add_text
+    def add_text(text, position, vector = nil)
     end
-    def at
+    def at(index)
     end
     def clear!
     end
@@ -138,25 +136,26 @@ module Sketchup
 
     def each
     end
-    def erase_entities
+    def erase_entities(*args)
     end
-    def fill_from_mesh
+    def fill_from_mesh(mesh, weld = nil,
+                       smooth = AUTO_SOFTEN | SMOOTH_SOFT_EDGES,
+                       front_material = nil, back_material = nil)
     end
-    def intersect_with
+    def intersect_with(recurse, transform1, entities1, transform2, hidden, entities2)
     end
     def length
     end
 
     def model
-      @model
     end
     def parent
     end
-    def remove_observer
+    def remove_observer(observer)
     end
-    def transform_by_vectors
+    def transform_by_vectors(entities, vectors)
     end
-    def transform_entities
+    def transform_entities(transformation, entities)
     end
   end
 end

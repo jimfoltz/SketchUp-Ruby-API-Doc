@@ -60,7 +60,7 @@ module Geom
     #   objects.
     #
     # @return [Geom::BoundingBox] The current {BoundingBox} object.
-    def add(things)
+    def add(*args)
     end
 
     # Get the center point of the bounding box.

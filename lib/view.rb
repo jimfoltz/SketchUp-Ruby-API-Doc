@@ -27,7 +27,7 @@ module Sketchup
         end
         def corner(index)
         end
-        def draw(mode, points)
+        def draw(mode, *points)
         end
 
         # Used to draw temporary geometry on the screen rather than 3d space.
@@ -44,7 +44,7 @@ module Sketchup
         # @param [Array] points An Array of 2d screen coordinates in pixels.
         #
         # @return [View] the View
-        def draw2d(opengl_primitive, points)
+        def draw2d(opengl_primitive, *points)
         end
         def draw_line(*args)
         end
@@ -68,7 +68,7 @@ module Sketchup
         end
         def inference_locked?
         end
-        def inputpoint(x, y, inputpoint)
+        def inputpoint(x, y, inputpoint = nil)
         end
         def invalidate
         end
@@ -78,13 +78,14 @@ module Sketchup
         end
         def line_width=(pixel_width)
         end
-        def lock_inference(inputpoint1, inputpoint2)
+        def lock_inference(inputpoint1 = nil, inputpoint2 = nil)
         end
         def model
         end
-        def pick_helper
+        # @return [Sketchup::PickHelper]
+        def pick_helper(x = nil, y = nil, aperture = nil)
         end
-        def pickray
+        def pickray(x = nil, y = nil)
         end
         def pixels_to_model(pixel_size, point)
         end
