@@ -53,9 +53,9 @@ module UI
     # File selection dialog.
     # @version 2014
     # @example
-    #  chosen_image = UI.openpanel("Open SKP File", "c:/", "model.skp")
+    #  chosen_model = UI.openpanel("Open SKP File", "c:/", "model.skp")
     #  chosen_image = UI.openpanel("Open Image File", "c:/", "Image Files|*.jpg;*.png;||")
-    #  chosen_image = UI.openpanel("Open CAD File", "c:/", "DXF|*.dxf|DWG|*.dwg||")
+    #  chosen_file  = UI.openpanel("Open CAD File", "c:/", "DXF|*.dxf|DWG|*.dwg||")
     # 
     def self.openpanel
     end
@@ -94,10 +94,25 @@ module UI
     end
     def self.show_preferences(page)
     end
-    def self.start_timer
+
+    # The start_timer method is used to start a timer and execute deferred code.
+    # @param [Numeric] interval The time in seconds before your code should be called.
+    # @param [Boolean] repeat whether to repeat the timer
+    # @yield The procedure you want to execute after the amount of seconds has expired.
+    # @return [Fixnum] id a timer ID to identify the timer for stopping it
+    # @note In SketchUp 7.1 and lower, the interval was rounded down to the nearest integer. A timer with interval 0.9
+    #   would execute immediately.
+    # @note There is a bug that if you open a modal window in a non-repeating timer the timer will repeat until the
+    #   window is closed.
+    def self.start_timer(interval, repeat=false, &block)
     end
-    def self.stop_timer
+
+    # The stop_timer method is used to stop a timer based on its id.
+    # @param [Fixnum] id The timer id for the timer that you want to stop.
+    # @return [nil]
+    def self.stop_timer(id)
     end
+
     def self.toolbar
     end
     def self.toolbar_names
