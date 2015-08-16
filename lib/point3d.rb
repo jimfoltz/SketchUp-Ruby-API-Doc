@@ -53,9 +53,6 @@ module Geom
     # @return [Numeric] The coordinate at the specified index.
     # @raise IndexError if the index is outside the range [0,2]. Note that negative indices [-3,-1] don't raise.
     def [](index)
-    # @param [Integer] index
-    # @return [Length]
-    def []
     end
 
     # Retrieves the coordinate of the point at the specified index.
