@@ -3,15 +3,15 @@ module Sketchup
         include Enumerable
         def []
         end
-        def add
+        def add(*args)
         end
-        def add_observer
+        def add_observer(observer)
         end
-        def at
+        def at(index)
         end
         def clear
         end
-        def contains?
+        def contains?(entity)
         end
         def count
         end
@@ -21,7 +21,7 @@ module Sketchup
         end
         def first
         end
-        def include?
+        def include?(entity)
         end
         def is_curve?
         end
@@ -36,16 +36,16 @@ module Sketchup
         end
         def nitems
         end
-        def remove
+        def remove(*args)
         end
-        def remove_observer
+        def remove_observer(observer)
         end
         def shift
         end
         def single_object?
         end
 
-        def toggle
+        def toggle(*args)
         end
     end
 end

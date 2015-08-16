@@ -1,59 +1,6 @@
 module Geom
   class Vector3d
 
-    def %
-    end
-    
-    # Computes the cross product between 2 Vectors.
-    # @return [Vector3d]
-    def *(vector)
-    end
-
-    # Vector Addition
-    def +
-    end
-
-    # Vector subtraction
-    def -
-    end
-    def <
-    end
-
-    # Determines if vectors are equal within tolerance.
-    def ==
-    end
-
-    # Element Reference
-    # @param [i] index of element 0, 1, or 2
-    # @return element at index i
-    def []
-    end
-
-    def []=
-    end
-    def angle_between
-    end
-    def axes
-    end
-    def clone
-    end
-    # Computes the cross product between another vector.
-    def cross(vector)
-    end
-
-    # Compute the dot product between another vector.
-    def dot
-    end
-    def inspect
-    end
-
-    def length
-    end
-    def length=
-    end
-    def linear_combination
-    end
-
     # Creates a new vector.
     # @overload self.new()
     #   Creates a vector with all coordinates set to zero. Note that such a zero-length vector is not valid.
@@ -66,32 +13,84 @@ module Geom
     #   @param [Length,Numeric] y  the y coordinate
     #   @param [Length,Numeric] z  the z coordinate
     # @return [Geom::Vector3d] a new vector instance
-    def self.new(*args)
+    def initialize(*args)
     end
 
+    def %(vector)
+    end
+
+    # Computes the cross product between 2 Vectors.
+    # @return [Vector3d]
+    def *(vector)
+    end
+
+    # Vector Addition
+    def +(vector)
+    end
+
+    # Vector subtraction
+    def -(vector)
+    end
+    def <(vector)
+    end
+
+    # Determines if vectors are equal within tolerance.
+    def ==(vector)
+    end
+
+    # Element Reference
+    # @param [i] index of element 0, 1, or 2
+    # @return element at index i
+    def []
+    end
+
+    def []=(value)
+    end
+    def angle_between(vector)
+    end
+    def axes
+    end
+    def clone
+    end
+    # Computes the cross product between another vector.
+    def cross(vector)
+    end
+
+    # Compute the dot product between another vector.
+    def dot(vector)
+    end
+    def inspect
+    end
+
+    def length
+    end
+    def length=(value)
+    end
+    def linear_combination
+    end
     def normalize
     end
     def normalize!
     end
-    def parallel?
+    def parallel?(vector)
     end
-    def perpendicular?
+    def perpendicular?(vector)
     end
     def reverse
     end
     def reverse!
     end
-    def samedirection?
+    def samedirection?(vector)
     end
-    def set!
+    def set!(*args)
     end
     def to_a
     end
     def to_s
     end
-    def transform
+    def transform(transformation)
     end
-    def transform!
+    def transform!(transformation)
     end
     def unitvector?
     end
@@ -99,15 +98,15 @@ module Geom
     end
     def x
     end
-    def x=
+    def x=(value)
     end
     def y
     end
-    def y=
+    def y=(value)
     end
     def z
     end
-    def z=
+    def z=(value)
     end
-end
+  end
 end # module Geom

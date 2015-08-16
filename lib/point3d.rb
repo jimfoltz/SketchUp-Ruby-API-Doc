@@ -1,11 +1,18 @@
 module Geom
   class Point3d
 
-    # @private
-    def initialize(pt = nil)
-      @x = pt[0]
-      @y = pt[1]
-      @z = pt[2]
+    # Creates a new 3D point.
+    # @overload initialize()
+    #   Creates a point at the origin with all coordinates set to zero.
+    # @overload initialize(point)
+    #   @param [Geom::Point3d] point  another point
+    # @overload initialize(array)
+    #   @param [Array<Numeric>] array  an array of two or three coordinates
+    # @overload initialize(x, y, z=0.0)
+    #   @param [Numeric] x  the x coordinate
+    #   @param [Numeric] y  the y coordinate
+    #   @param [Numeric] z  the z coordinate
+    def initialize(*args)
     end
 
     # Returns a new Point3d which is offset from the receiver by the given vector.
@@ -26,7 +33,7 @@ module Geom
     end
 
     # Determine which point is closer to the origin
-    # @param [Geom::Point3d] point2
+    # @param [Geom::Point3d,Array<Numeric>] point2
     # @return [Boolean] true if point2 is closer to the ORIGIN
     # @example
     #   pt1 = Geom::Point3d.new(10, 10, 10)
@@ -36,25 +43,25 @@ module Geom
     end
 
     # Compare {Point3d}s using SketchUp tolerance.
-    # @overload ==(point2)
-    #   @params [Geom::Point3d]
-    # @overload ==(array)
-    #   @param [Array]
+    # @params [Geom::Point3d,Array<Numeric>] point2
     # @return [Boolean]
     def ==(point2)
     end
 
     # Retrieves the coordinate of the point at the specified index.
-    # @param [Fixnum] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
-    # @return [Length] The coordinate at the specified index.
+    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
+    # @return [Numeric] The coordinate at the specified index.
     # @raise IndexError if the index is outside the range [0,2]. Note that negative indices [-3,-1] don't raise.
     def [](index)
+    # @param [Integer] index
+    # @return [Length]
+    def []
     end
 
     # Retrieves the coordinate of the point at the specified index.
-    # @param [Fixnum] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
-    # @param [Length,Numeric] value  The new x, y or z value.
-    # @return [Length,Numeric] The argument passed for the new value.
+    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
+    # @param [Numeric] value  The new x, y or z value.
+    # @return [Numeric] The argument passed for the new value.
     # @raise IndexError  Raised if the index is outside the range [0,2]. Note that negative indices [-3,-1] don't raise.
     def []=(index, value)
     end
@@ -65,13 +72,13 @@ module Geom
     end
 
     # Compute the distance from this point to another point.
-    # @param [Geom::Point3d,Array] point2  The Point3d object to compute the distance to.
+    # @param [Geom::Point3d,Array<Numeric>] point2  The Point3d object to compute the distance to.
     # @return [Length] The distance as length object.
     def distance(point2)
     end
 
     # Computes the distance from this point to a line.
-    # @param [Array(Geom::Point3d,Geom::Vector3d),Array()Geom::Point3d,Geom::Point3d)] line
+    # @param [Array(Geom::Point3d,Geom::Vector3d),Array(Geom::Point3d,Geom::Point3d)] line
     # @return [Length] The distance as length object.
     def distance_to_line(line)
     end
@@ -98,30 +105,16 @@ module Geom
     def self.linear_combination(weight1, point1, weight2, point2)
     end
 
-    # Creates a new 3D point.
-    # @overload self.new()
-    #   Creates a point at the origin with all coordinates set to zero.
-    # @overload self.new(point)
-    #   @param [Geom::Point3d] point  another point
-    # @overload self.new(array)
-    #   @param [Array<Length,Numeric>] array  an array of two or three coordinates
-    # @overload self.new(x, y, z=0)
-    #   @param [Length,Numeric] x  the x coordinate
-    #   @param [Length,Numeric] y  the y coordinate
-    #   @param [Length,Numeric] z  the z coordinate
-    def self.new(*args)
-    end
-
     # Offsets a point by a vector and returns a new point. The length of the vector must not be zero.
     # @param [Geom::Vector3d,Array<Numeric>] vector  A vector providing direction and distance to offset the point by.
-    # @param [Length,Numeric] length  The distance to offset. If not provided, the offset is equal to the vector length.
+    # @param [Numeric] length  The distance to offset. If not provided, the offset is equal to the vector length.
     # @return [Geom::Point3d] a new Point3d object
     def offset(vector, length=vector.length)
     end
 
     # Applies an offset by a vector to this point. The length of the vector must not be zero.
     # @param [Geom::Vector3d,Array<Numeric>] vector  A vector providing direction and distance to offset the point by.
-    # @param [Length,Numeric] length  The distance to offset. If not provided, the offset is equal to the vector length.
+    # @param [Numeric] length  The distance to offset. If not provided, the offset is equal to the vector length.
     # @return [self]
     def offset!(vector, length=vector.length)
     end
@@ -151,9 +144,9 @@ module Geom
     end
 
     # Sets the values of this point.
-    # @param [Length,Numeric] x  The location along the x axis.
-    # @param [Length,Numeric] y  The location along the y axis. If not given, this coordinate is not modified.
-    # @param [Length,Numeric] z  The location along the z axis. If not given, this coordinate is not modified.
+    # @param [Numeric] x  The location along the x axis.
+    # @param [Numeric] y  The location along the y axis. If not given, this coordinate is not modified.
+    # @param [Numeric] z  The location along the z axis. If not given, this coordinate is not modified.
     # @return [self]
     def set!(x, y=self.x, z=self.y)
     end
@@ -193,8 +186,8 @@ module Geom
     end
 
     # Sets the x value of this point.
-    # @param [Length,Numeric] value  The new x coordinate.
-    # @return [Length,Numeric] The argument passed for the new value.
+    # @param [Numeric] value  The new x coordinate.
+    # @return [Numeric] The argument passed for the new value.
     def x=(value)
     end
 
@@ -204,8 +197,8 @@ module Geom
     end
 
     # Sets the y value of this point.
-    # @param [Length,Numeric] value  The new y coordinate.
-    # @return [Length,Numeric] The argument passed for the new value.
+    # @param [Numeric] value  The new y coordinate.
+    # @return [Numeric] The argument passed for the new value.
     def y=(value)
     end
 
@@ -215,8 +208,8 @@ module Geom
     end
 
     # Sets the z value of this point.
-    # @param [Length,Numeric] value  The new z coordinate.
-    # @return [Length,Numeric] The argument passed for the new value.
+    # @param [Numeric] value  The new z coordinate.
+    # @return [Numeric] The argument passed for the new value.
     def z=(value)
     end
 

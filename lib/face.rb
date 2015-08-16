@@ -1,6 +1,14 @@
 module Sketchup
   class Face < Drawingelement
 
+    PointUnknown = 0
+    PointInside = 1
+    PointOnVertex = 2
+    PointOnEdge = 4
+    PointOnFace = 8
+    PointOutside = 16
+    PointNotOnPlane = 32
+
     # @since SketchUp 2014
     # @return [Vector3d]
     # @param [Boolean] use_front_side
@@ -22,9 +30,9 @@ module Sketchup
     end
     def back_material
     end
-    def back_material=
+    def back_material=(material)
     end
-    def classify_point
+    def classify_point(point)
     end
     def edges
     end
@@ -40,15 +48,22 @@ module Sketchup
     end
     def material=
     end
-    def mesh
+
+    # @return [Geom::PolygonMesh]
+    def mesh(flags = Geom::PolygonMesh::PolygonMeshPoints)
     end
+
     def normal
     end
     def outer_loop
     end
     def plane
     end
-    def position_material
+
+    # @param [Sketchup::Material] material
+    # @param [Array<Geom::Point3d>] mapping
+    # @param [Boolean] front
+    def position_material(material, mapping, front)
     end
     def pushpull
     end

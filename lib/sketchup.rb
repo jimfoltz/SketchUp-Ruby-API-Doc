@@ -132,7 +132,7 @@ module Sketchup
   def self.read_default
   end
 
-  def self.register_extension
+  def self.register_extension(extension, load_on_start)
   end
 
   def self.register_importer
@@ -149,10 +149,10 @@ module Sketchup
   def self.remove_observer(app_observer)
   end
 
-  def self.require
+  def self.require(filename)
   end
 
-  def self.save_thumbnail
+  def self.save_thumbnail(filename)
   end
 
   def self.send_action

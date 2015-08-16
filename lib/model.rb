@@ -30,8 +30,8 @@ module Sketchup
         def active_layer
         end
 
-        # @param [Layer]
-        def active_layer=
+        # @param [Layer] layer
+        def active_layer=(layer)
         end
 
         def active_path
@@ -201,7 +201,7 @@ module Sketchup
         #   @param [Boolean] prev_trans
         #
         # @return [bool] true if successful, false if not.
-        def start_operation(op_name)
+        def start_operation(op_name, disable_ui = false, next_transparent = false, previous_transparent = false)
         end
 
         def styles
