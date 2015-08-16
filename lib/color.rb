@@ -1,5 +1,5 @@
 module Sketchup
-class Color
+  class Color
     def alpha
     end
     def alpha=
@@ -16,7 +16,7 @@ class Color
     end
     def names
     end
-    def new
+    def self.new
     end
     def red
     end
@@ -28,5 +28,5 @@ class Color
     end
     def to_s
     end
-end
+  end
 end

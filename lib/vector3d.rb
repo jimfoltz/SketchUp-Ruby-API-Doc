@@ -1,5 +1,6 @@
 module Geom
-class Vector3d
+  class Vector3d
+
     def %
     end
     
@@ -52,8 +53,22 @@ class Vector3d
     end
     def linear_combination
     end
-    def new
+
+    # Creates a new vector.
+    # @overload self.new()
+    #   Creates a vector with all coordinates set to zero. Note that such a zero-length vector is not valid.
+    # @overload self.new(vector)
+    #   @param [Geom::Vector3d] vector  another vector
+    # @overload self.new(array)
+    #   @param [Array<Length,Numeric>] array  an array of two or three coordinates
+    # @overload self.new(x, y, z=0)
+    #   @param [Length,Numeric] x  the x coordinate
+    #   @param [Length,Numeric] y  the y coordinate
+    #   @param [Length,Numeric] z  the z coordinate
+    # @return [Geom::Vector3d] a new vector instance
+    def self.new(*args)
     end
+
     def normalize
     end
     def normalize!

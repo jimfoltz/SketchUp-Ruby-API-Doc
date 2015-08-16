@@ -17,7 +17,7 @@ module UI
         end
 
         # @since SketchUp 6
-        def new(menu_text, &block)
+        def self.new(menu_text, &block)
         end
 
         # @since SketchUp 6

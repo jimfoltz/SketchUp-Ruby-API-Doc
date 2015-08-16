@@ -2,31 +2,31 @@ module Geom
 class Transformation
     def *
     end
-    def axes
+    def self.axes
     end
     def clone
     end
     def identity?
     end
-    def interpolate
+    def self.interpolate
     end
     def inverse
     end
     def invert!
     end
-    def new
+    def self.new
     end
     def origin
     end
-    def rotation
+    def self.rotation
     end
-    def scaling
+    def self.scaling
     end
     def set!
     end
     def to_a
     end
-    def translation
+    def self.translation
     end
     def xaxis
     end

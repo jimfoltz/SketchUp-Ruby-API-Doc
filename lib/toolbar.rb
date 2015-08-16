@@ -16,7 +16,7 @@ module UI
     end
     def hide
     end
-    def new(name)
+    def self.new(name)
     end
     def restore
     end
