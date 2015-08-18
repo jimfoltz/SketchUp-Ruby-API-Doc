@@ -15,7 +15,7 @@ module Geom
     def initialize(*args)
     end
 
-    # Returns a new Point3d which is offset from the receiver by the given vector.
+    # Returns a new point which is offset from the receiver by the given vector.
     # @example
     #   pt = Geom::Point3d.new(1, 2, 3)
     #   pt2 = pt + [1, 1, 1]
@@ -26,18 +26,25 @@ module Geom
     def +(vector)
     end
 
-    # Returns a Vector3d from
-    # @param [Geom::Point3d] point
-    # @return [Geom::Vector3d]
-    def -(point)
+    # Subtracts from this point.
+    # @overload -(vector)
+    #   Returns a point that is offset from this point in the opposite direction of the given vector.
+    #   @param [Geom::Vector3d,Array<Numeric>] vector
+    #   @return [Geom::Point3d]
+    # @overload -(point2)
+    #   Returns a vector from another point to this point.
+    #   @param [Geom::Point3d] point2
+    #   @return [Geom::Vector3d]
+    def -(vector)
     end
 
-    # Determine which point is closer to the origin
+    # Compare two points coordinate by coordinate. First the x coordinates are compared, if they are equal, the y
+    # coordinates are compared, if those are equal finally the z coordinates.
     # @param [Geom::Point3d,Array<Numeric>] point2
-    # @return [Boolean] true if point2 is closer to the ORIGIN
+    # @return [Boolean] true if this point's x, y or z coordinate is less
     # @example
-    #   pt1 = Geom::Point3d.new(10, 10, 10)
-    #   pt2 = Geom::Point3d.new(20, 20, 20)
+    #   pt1 = Geom::Point3d.new(10, 10, 90)
+    #   pt2 = Geom::Point3d.new(10, 20, 20)
     #   pt1 < pt2 # ==> true
     def < (point2)
     end
@@ -49,14 +56,14 @@ module Geom
     end
 
     # Retrieves the coordinate of the point at the specified index.
-    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
+    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the point.
     # @return [Numeric] The coordinate at the specified index.
     # @raise IndexError Raised if the index is outside the range [0,2]. Note that negative indices [-3,-1] don't raise.
     def [](index)
     end
 
     # Retrieves the coordinate of the point at the specified index.
-    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the Point3d.
+    # @param [Integer] index  The index 0, 1 or 2 for a specific x, y, or z value within the point.
     # @param [Numeric] value  The new x, y or z value.
     # @return [Numeric] The argument passed for the new value.
     # @raise IndexError  Raised if the index is outside the range [0,2]. Note that negative indices [-3,-1] don't raise.
