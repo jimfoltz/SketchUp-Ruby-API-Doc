@@ -206,7 +206,7 @@ module Geom
     def y=(value)
     end
 
-    # Retrieves the z  coordinate of this point.
+    # Retrieves the z coordinate of this point.
     # @return [Length]
     def z
     end
