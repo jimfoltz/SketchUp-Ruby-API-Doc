@@ -85,6 +85,10 @@ module Sketchup
             @entities
         end
 
+        # @note Exporting a model actually saves a copy of the model,
+        #   and subsequently triggers the `onSaveModel` method of any [ModelObserver]
+        # @see
+        #   {http://stackoverflow.com/questions/32246092/onsavemodel-observer-in-ruby-sketchup-causes-infinite-loop#comment52404566_32256862 This comment}
         def export
         end
 
