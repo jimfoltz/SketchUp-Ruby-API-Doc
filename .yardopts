@@ -1,3 +1,6 @@
+--charset UTF-8
+--markup markdown
+--title "SketchUp Ruby API Documentation - Community Edition"
 --readme README
 --no-private
 -
