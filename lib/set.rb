@@ -2,17 +2,17 @@ module Sketchup
   class Set
     def clear
     end
-    def contains?
+    def contains?(object)
     end
-    def delete
+    def delete(object)
     end
     def each
     end
     def empty?
     end
-    def include?
+    def include?(object)
     end
-    def insert
+    def insert(object)
     end
     def length
     end
