@@ -1,6 +1,21 @@
 module Sketchup
     # This is the access point for many common Sketchup objects
     class Model
+
+        # Sketchup::Model.constants.each { |n|
+        #   puts "#{n} = #{Sketchup::Model.const_get(n)}"
+        # }
+
+        VERSION_3 = 3
+        VERSION_4 = 4
+        VERSION_5 = 5
+        VERSION_6 = 6
+        VERSION_7 = 7
+        VERSION_8 = 8
+        VERSION_2013 = 9
+        VERSION_2014 = 10
+        VERSION_2015 = 11
+
         # @private
         def initialize
             # These collections may also depend on the template...
