@@ -54,8 +54,29 @@ module Sketchup
         end
         def draw_polyline(*args)
         end
-        def draw_text(point, string)
+        
+        # @return [View]
+        # @overload draw_text(point, text)
+        #   @since SketchUp 6
+        #   @param [Point3d] point
+        #   @param [String] text
+        #
+        # @overload draw_text(point, text, opts = {})
+        #   @since SketchUp 2016
+        #   @param [Point3d] point
+        #   @param [String] text
+        #   @param [Hash] opts
+        #   @option opts [String] :font_name The name of the font to use. If it does not #     exist on the system, a default font will be used instead.
+        #   @option opts [Integer] :font_size The size of the font in points
+        #   @option opts [Boolean] :bold Controls the Bold property of the font.
+        #   @option opts [Boolean] :italic Controls the Italic property of the font.
+        #   @option opts [Color] :color The color to draw the text with.
+        #   @option opts [Integer] :align The text alignment, one of the following:
+        #     TextAlignLeft, TextAlignCenter or TextAlignRight. 
+        #   
+        def draw_text(point, string, options_hash)
         end
+
         def drawing_color=(color)
         end
         def dynamic=(boolean)

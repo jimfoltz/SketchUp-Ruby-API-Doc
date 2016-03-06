@@ -7,6 +7,7 @@ module UI
         end
 
         # @since SketchUp 6
+        # @since SketchUp 2016 - svg files supported
         def large_icon=(filename)
         end
         def menu_text
@@ -29,6 +30,7 @@ module UI
         end
 
         # @since SketchUp 6
+        # @since SketchUp 2016 - svg files supported
         def small_icon=(filename)
         end
 

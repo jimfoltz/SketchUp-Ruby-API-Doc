@@ -15,6 +15,18 @@ module Sketchup
     end
     def count_instances
     end
+
+    # The count_used_instances method is used to count the total number of
+    # component instances in a model using this component definition. This
+    # method takes into account the full hierarchy of the model.
+    #
+    # @since SketchUp 2016
+    # @return [Fixnum] the number of instances
+    def count_used_instances
+       count = 0
+       return count
+    end
+    
     def description
     end
     def description=

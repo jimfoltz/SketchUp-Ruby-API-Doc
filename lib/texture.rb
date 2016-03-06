@@ -1,5 +1,8 @@
 module Sketchup
+   
+   # @since SketchUp 6
     class Texture < Entity
+
         def average_color
         end
         def filename
@@ -16,5 +19,12 @@ module Sketchup
         end
         def width
         end
+
+        # @param [String] filename
+        # @since SketchUp 2016
+        # @return true or false
+        def write(filename, colorize = false)
+        end
+
     end
 end

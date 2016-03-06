@@ -1,10 +1,18 @@
 module Sketchup
+
    # @since SketchUp 6
    class PickHelper
+
       def all_picked
       end
       def best_picked
       end
+
+      # @since SketchUp 2016
+      # @return [Integer] the number of Entity objects picked
+      def boundingbox_pick(bounding_box, pick_type, transformtion = nil)
+      end
+
       def count
       end
       def depth_at
@@ -34,7 +42,7 @@ module Sketchup
       def view
       end
 
-      # @since SketchUp 16
+      # @since SketchUp 2016
       # @return [Integer] number of entities picked
       def window_pick(start_point, end_point, pick_type)
       end

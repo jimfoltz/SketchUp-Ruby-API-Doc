@@ -7,6 +7,7 @@ module UI
     def self.beep
     end
 
+    # @since SketchUp 2016 - support for .svg icons added
     def self.create_cursor(filename, hot_x, hot_y)
     end
     def self.inputbox(*args)

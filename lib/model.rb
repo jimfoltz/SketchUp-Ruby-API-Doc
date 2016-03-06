@@ -102,8 +102,12 @@ module Sketchup
 
         # @note Exporting a model actually saves a copy of the model,
         #   and subsequently triggers the `onSaveModel` method of any [ModelObserver]
+        #
+        # @note PDF export ability added in SketchUp 2016
+        #
         # @see
-        #   {http://stackoverflow.com/questions/32246092/onsavemodel-observer-in-ruby-sketchup-causes-infinite-loop#comment52404566_32256862 This comment}
+        #   http://stackoverflow.com/questions/32246092/onsavemodel-observer-in-ruby-sketchup-causes-infinite-loop#comment52404566_32256862
+        #    The way exporters work, SketchUp will first save a temporary copy of the model and pass that temp skp file path to the exporter. That's why onSaveModel triggers during an export. The resulting infinite loop would certainly be nasty :-) – Bugra Barin Aug 28 '15 at 2:40 
         def export
         end
 

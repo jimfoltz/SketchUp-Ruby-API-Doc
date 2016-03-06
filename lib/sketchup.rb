@@ -39,6 +39,31 @@ module Sketchup
 
   def self.app_name
   end
+
+  # When enabled (true):
+  #
+  # * Ruby Console now warns about Ruby operations left open. Leaving
+  #   operations open is typically a bad practice. We are warning developers
+  #   that they should try to find a different way of doing what they want to do.
+  # * Ruby Console now warns when a user tries to create a nested operation.
+  #   Starting a new operation while one is still open is a bad practice. We
+  #   would like developers to be more aware that they are doing this so that
+  #   they can fix their code.
+  #
+  # @param [Boolean] mode true or false
+  # @return [Boolean] mode
+  # @since SketchUp 2016
+  #
+  def self.debug_mode=(mode)
+     @debug_mode = mode
+  end
+
+  # @since SketchUp 2016
+  # @return [Boolean]
+  def self.debug_mode?
+     @debug_mode
+  end
+
   def self.break_edges=
   end
   def self.break_edges?
