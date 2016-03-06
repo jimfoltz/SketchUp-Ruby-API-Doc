@@ -1,7 +1,7 @@
 module Sketchup
 
    # @since SketchUp 2016
-   class Axes
+   class Axes < Entity
 
       # @return Array<Vector3d>
       def axes
