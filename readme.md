@@ -1,3 +1,6 @@
+Update 2016-10-03 - The official SketchUp documentation is now updated and using a similar idea. Visit the official [SketchUp Ruby API Documentation](http://ruby.sketchup.com/).
+
+
 This is a project to document the [SketchUp Ruby API](http://www.sketchup.com/intl/en/developer/ "SketchUp Ruby API") using YARD the Ruby documentation tool.
 
 Although the official SketchUp Ruby API documentation is very good, it does have some problems. 
